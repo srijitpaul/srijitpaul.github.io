@@ -6,3 +6,4 @@ _layouts
 _posts
 _sass
 _config.yml
+.sass-cache
