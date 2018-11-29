@@ -7,3 +7,4 @@ _posts
 _sass
 _config.yml
 .sass-cache
+.jekyll-metadata
