@@ -1,19 +1,25 @@
-collections:
-    authors:
-     output: true
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            LogBook
+tagline:          'A Log Book of my thoughts'
+description:      'A brazen two-column representation of my thoughts.'
+url:              http://srijitpaul.github.io
+baseurl:          /
+
+author:
+  name:           'Srijit Paul'
+  url:            
+
+paginate:         5
+
+# Custom vars
+version:         0.0.1
+
+github:
+  repo:           https://github.com/srijitpaul
