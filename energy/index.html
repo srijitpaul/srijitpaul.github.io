@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="A live estimate, computed in your browser, of the energy used while you browse this site.">
+  <meta name="theme-color" content="#000000">
+  <title>Energy of your visit | Srijit Paul</title>
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/scholar.css?v=34">
+  <script defer src="/assets/js/visit-energy.js?v=1"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="/">Home</a>
+      <nav aria-label="Main navigation"><a href="/#research">Research</a><a href="/#about">About</a><a href="/assets/CV.pdf">CV</a><a href="/hadronicle/">Hadronicle</a><a href="/mogojastro/" lang="bn">মগজাস্ত্র</a></nav>
+    </div>
+  </header>
+  <main id="main" class="page article-page">
+    <p><a class="back-link" href="/">← Home</a></p>
+    <p class="kicker">Live estimate</p>
+    <h1>Energy of your visit</h1>
+    <p class="article-intro">An estimate of the energy used while you browse this site in this tab, computed in your browser from what it can measure. The measurements stay in your browser.</p>
+    <div class="article-body">
+      <section id="visit-energy" class="energy-panel" aria-labelledby="energy-now" hidden>
+        <h2 id="energy-now">This visit so far</h2>
+        <table class="energy-table">
+          <tbody>
+            <tr><th scope="row">Pages loaded</th><td id="ve-pages">—</td><td>measured</td></tr>
+            <tr><th scope="row">Data downloaded</th><td id="ve-bytes">—</td><td>measured</td></tr>
+            <tr><th scope="row">Time pages were on screen</th><td id="ve-time">—</td><td>measured</td></tr>
+            <tr><th scope="row">Data centres</th><td id="ve-data-centres">—</td><td>estimated from data downloaded</td></tr>
+            <tr><th scope="row">Networks</th><td id="ve-networks">—</td><td>estimated from data downloaded</td></tr>
+            <tr><th scope="row">Your device</th><td id="ve-device">—</td><td>estimated from time and device power</td></tr>
+            <tr class="energy-total"><th scope="row">Total</th><td><span id="ve-total">—</span> <span id="ve-total-wh" class="energy-wh"></span></td><td>sum of the three estimates</td></tr>
+          </tbody>
+        </table>
+        <fieldset class="energy-power">
+          <legend>Your device’s power while browsing</legend>
+          <label><input type="radio" name="device-power" value="1.4" data-preset="phone"> Phone, about 1.4 W</label>
+          <label><input type="radio" name="device-power" value="10" data-preset="laptop"> Laptop, about 10 W</label>
+          <label><input type="radio" name="device-power" value="custom"> Other: <input id="ve-custom-watts" type="number" min="0" step="0.5" inputmode="decimal" aria-label="Device power in watts"> W</label>
+          <p id="ve-power-note" class="energy-note" aria-live="polite"></p>
+        </fieldset>
+      </section>
+      <noscript><p>This page needs JavaScript to measure your visit. The method is described below.</p></noscript>
+
+      <h2>What is measured</h2>
+      <p>Each page of this site records, in your browser, the bytes it received over the network (the Resource Timing API’s <code>transferSize</code>, including headers) and how long it was visible on your screen (the Page Visibility API). Files served from your browser’s cache count as zero bytes, so later visits use less data. The totals for this tab are kept in your browser’s session storage, which is deleted when you close the tab. The script only reads these browser measurements and writes to session storage. The pages’ Content Security Policy blocks scripts from sending network requests, so the numbers cannot leave your browser. As for any website, GitHub, which hosts this site, still receives the ordinary requests for its pages and files.</p>
+
+      <h2>How the energy is estimated</h2>
+      <p><strong>Data centres and networks.</strong> The data downloaded is multiplied by the operational energy intensities of version 4 of the <a href="https://sustainablewebdesign.org/estimating-digital-emissions/">Sustainable Web Design Model</a>: 0.055 kWh per GB for data centres and 0.059 kWh per GB for networks. These are averages: worldwide yearly energy use of data centres (290 TWh) and networks (310 TWh), divided by worldwide data transfer (5.29 ZB). They share out existing energy use in proportion to data. The extra energy caused by one more download is likely smaller, because network equipment draws much of its power whatever the traffic.</p>
+      <p><strong>Your device.</strong> A website cannot read your device’s power, so this part is the time pages were on screen multiplied by the power you choose above. It counts the whole device while this site is on screen, including the display. The extra power caused by the page itself is smaller. Devices differ widely. Measured examples: a phone with an OLED screen drew 1.0–1.4 W and a Surface Laptop 2 drew 14 W while showing a web page (<a href="https://devblogs.microsoft.com/sustainable-software/green-energy-efficient-progressive-web-apps/">Microsoft, 2020</a>); a 16-inch MacBook Pro drew about 8–9.5 W with a browser open, and loading a page added roughly 0.5 W (<a href="https://blog.scottlogic.com/2024/08/06/carbon-emissions-of-end-user-devices-part-two.html">Scott Logic, 2024</a>). The presets use 1.4 W for a phone and 10 W for a laptop. A desktop computer with a monitor usually draws more; enter its power under “Other”.</p>
+      <p><strong>Not included.</strong> The energy used to manufacture devices and equipment; the CV, if you open it, because scripts do not run in PDF viewers; other tabs and applications; and other people’s visits.</p>
+    </div>
+  </main>
+  <footer class="site-footer"><div>Srijit Paul <span>·</span> <a href="mailto:srijitpaul@gmail.com">Get in touch</a> <span>·</span> <a href="/energy/" aria-current="page">Energy of your visit</a></div></footer>
+</body>
+</html>

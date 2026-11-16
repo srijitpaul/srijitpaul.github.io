@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Research, biography, and writing by Srijit Paul.">
+  <meta name="theme-color" content="#000000">
+  <title>Srijit Paul</title>
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/scholar.css?v=34">
+  <script defer src="/assets/js/visit-energy.js?v=1"></script>
+  <script defer src="/assets/js/qcd-hadrons.js?v=6"></script>
+  <script defer src="/assets/js/research-animations.js?v=5"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="/" aria-current="page">Home</a>
+      <nav aria-label="Main navigation">
+        <a href="/#research">Research</a>
+        <a href="/#about">About</a>
+        <a href="/assets/CV.pdf">CV</a>
+        <a href="/hadronicle/">Hadronicle</a>
+        <a href="/mogojastro/" lang="bn">মগজাস্ত্র</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <section class="intro">
+      <div class="intro-copy">
+        <h1>Srijit Paul</h1>
+        <p class="intro-affiliation">Postdoctoral researcher<br>Department of Physics · University of Cyprus</p>
+        <p>I study the strong interactions between quarks and gluons by simulating them on the lattice.</p>
+        <p class="intro-links"><a href="mailto:srijitpaul@gmail.com">Email</a><span> / </span><a href="https://github.com/srijitpaul">GitHub</a><span> / </span><a href="/assets/CV.pdf">CV (PDF)</a></p>
+      </div>
+      <img class="portrait" src="/assets/img/srijit-portrait.webp?v=4" alt="Caricature of Srijit Paul" width="330" height="495" decoding="async">
+    </section>
+
+    <section class="content-section" id="research">
+      <h2>Research</h2>
+      <div>
+        <p class="research-lead"><strong>Simulating the subatomic world from first principles.</strong> More than 99.9% of the mass of ordinary matter is in protons and neutrons, held together by the strong interaction. Most of my research computes this physics from first principles with lattice QCD.</p>
+        <details class="tool-card">
+          <summary>One tool for all of them: how lattice QCD works</summary>
+          <figure class="research-figure lattice-figure stepped-figure" data-default-step="2" aria-labelledby="lattice-figure-title">
+          <p class="figure-title" id="lattice-figure-title">How lattice QCD computes these quantities</p>
+          <div class="step-controls" role="group" aria-label="Lattice figure steps" hidden>
+            <button type="button" data-step-to="1" aria-pressed="false">1. The grid</button>
+            <button type="button" data-step-to="2" aria-pressed="false">2. Quarks and gluons</button>
+            <button type="button" data-step-to="3" aria-pressed="false">3. A correlation function</button>
+            <button type="button" data-step-to="4" aria-pressed="false">4. Continuum limit</button>
+            <button type="button" class="step-play">Play steps</button>
+          </div>
+          <svg class="lattice-plot" viewBox="0 0 420 246" role="img" aria-labelledby="lattice-title lattice-description">
+                <title id="lattice-title">A spacetime lattice</title>
+                <desc id="lattice-description">A grid of points drawn in perspective: eight time slices, each a four by four grid in two space directions. Neighbouring points are joined by links.</desc>
+                <g class="lat-layer lat-grid">
+                  <path class="lat-link" d="M60 175L98 175M60 175L60 151M60 175L76 164M76 164L114 164M76 164L76 140M76 164L92 153M92 153L130 153M92 153L92 129M92 153L108 142M108 142L146 142M108 142L108 118M60 151L98 151M60 151L60 127M60 151L76 140M76 140L114 140M76 140L76 116M76 140L92 129M92 129L130 129M92 129L92 105M92 129L108 118M108 118L146 118M108 118L108 94M60 127L98 127M60 127L60 103M60 127L76 116M76 116L114 116M76 116L76 92M76 116L92 105M92 105L130 105M92 105L92 81M92 105L108 94M108 94L146 94M108 94L108 70M60 103L98 103M60 103L76 92M76 92L114 92M76 92L92 81M92 81L130 81M92 81L108 70M108 70L146 70M98 175L136 175M98 175L98 151M98 175L114 164M114 164L152 164M114 164L114 140M114 164L130 153M130 153L168 153M130 153L130 129M130 153L146 142M146 142L184 142M146 142L146 118M98 151L136 151M98 151L98 127M98 151L114 140M114 140L152 140M114 140L114 116M114 140L130 129M130 129L168 129M130 129L130 105M130 129L146 118M146 118L184 118M146 118L146 94M98 127L136 127M98 127L98 103M98 127L114 116M114 116L152 116M114 116L114 92M114 116L130 105M130 105L168 105M130 105L130 81M130 105L146 94M146 94L184 94M146 94L146 70M98 103L136 103M98 103L114 92M114 92L152 92M114 92L130 81M130 81L168 81M130 81L146 70M146 70L184 70M136 175L174 175M136 175L136 151M136 175L152 164M152 164L190 164M152 164L152 140M152 164L168 153M168 153L206 153M168 153L168 129M168 153L184 142M184 142L222 142M184 142L184 118M136 151L174 151M136 151L136 127M136 151L152 140M152 140L190 140M152 140L152 116M152 140L168 129M168 129L206 129M168 129L168 105M168 129L184 118M184 118L222 118M184 118L184 94M136 127L174 127M136 127L136 103M136 127L152 116M152 116L190 116M152 116L152 92M152 116L168 105M168 105L206 105M168 105L168 81M168 105L184 94M184 94L222 94M184 94L184 70M136 103L174 103M136 103L152 92M152 92L190 92M152 92L168 81M168 81L206 81M168 81L184 70M184 70L222 70M174 175L212 175M174 175L174 151M174 175L190 164M190 164L228 164M190 164L190 140M190 164L206 153M206 153L244 153M206 153L206 129M206 153L222 142M222 142L260 142M222 142L222 118M174 151L212 151M174 151L174 127M174 151L190 140M190 140L228 140M190 140L190 116M190 140L206 129M206 129L244 129M206 129L206 105M206 129L222 118M222 118L260 118M222 118L222 94M174 127L212 127M174 127L174 103M174 127L190 116M190 116L228 116M190 116L190 92M190 116L206 105M206 105L244 105M206 105L206 81M206 105L222 94M222 94L260 94M222 94L222 70M174 103L212 103M174 103L190 92M190 92L228 92M190 92L206 81M206 81L244 81M206 81L222 70M222 70L260 70M212 175L250 175M212 175L212 151M212 175L228 164M228 164L266 164M228 164L228 140M228 164L244 153M244 153L282 153M244 153L244 129M244 153L260 142M260 142L298 142M260 142L260 118M212 151L250 151M212 151L212 127M212 151L228 140M228 140L266 140M228 140L228 116M228 140L244 129M244 129L282 129M244 129L244 105M244 129L260 118M260 118L298 118M260 118L260 94M212 127L250 127M212 127L212 103M212 127L228 116M228 116L266 116M228 116L228 92M228 116L244 105M244 105L282 105M244 105L244 81M244 105L260 94M260 94L298 94M260 94L260 70M212 103L250 103M212 103L228 92M228 92L266 92M228 92L244 81M244 81L282 81M244 81L260 70M260 70L298 70M250 175L288 175M250 175L250 151M250 175L266 164M266 164L304 164M266 164L266 140M266 164L282 153M282 153L320 153M282 153L282 129M282 153L298 142M298 142L336 142M298 142L298 118M250 151L288 151M250 151L250 127M250 151L266 140M266 140L304 140M266 140L266 116M266 140L282 129M282 129L320 129M282 129L282 105M282 129L298 118M298 118L336 118M298 118L298 94M250 127L288 127M250 127L250 103M250 127L266 116M266 116L304 116M266 116L266 92M266 116L282 105M282 105L320 105M282 105L282 81M282 105L298 94M298 94L336 94M298 94L298 70M250 103L288 103M250 103L266 92M266 92L304 92M266 92L282 81M282 81L320 81M282 81L298 70M298 70L336 70M288 175L326 175M288 175L288 151M288 175L304 164M304 164L342 164M304 164L304 140M304 164L320 153M320 153L358 153M320 153L320 129M320 153L336 142M336 142L374 142M336 142L336 118M288 151L326 151M288 151L288 127M288 151L304 140M304 140L342 140M304 140L304 116M304 140L320 129M320 129L358 129M320 129L320 105M320 129L336 118M336 118L374 118M336 118L336 94M288 127L326 127M288 127L288 103M288 127L304 116M304 116L342 116M304 116L304 92M304 116L320 105M320 105L358 105M320 105L320 81M320 105L336 94M336 94L374 94M336 94L336 70M288 103L326 103M288 103L304 92M304 92L342 92M304 92L320 81M320 81L358 81M320 81L336 70M336 70L374 70M326 175L326 151M326 175L342 164M342 164L342 140M342 164L358 153M358 153L358 129M358 153L374 142M374 142L374 118M326 151L326 127M326 151L342 140M342 140L342 116M342 140L358 129M358 129L358 105M358 129L374 118M374 118L374 94M326 127L326 103M326 127L342 116M342 116L342 92M342 116L358 105M358 105L358 81M358 105L374 94M374 94L374 70M326 103L342 92M342 92L358 81M358 81L374 70"/>
+                  <g class="lat-site"><circle cx="60" cy="175" r="1.7"/><circle cx="76" cy="164" r="1.7"/><circle cx="92" cy="153" r="1.7"/><circle cx="108" cy="142" r="1.7"/><circle cx="60" cy="151" r="1.7"/><circle cx="76" cy="140" r="1.7"/><circle cx="92" cy="129" r="1.7"/><circle cx="108" cy="118" r="1.7"/><circle cx="60" cy="127" r="1.7"/><circle cx="76" cy="116" r="1.7"/><circle cx="92" cy="105" r="1.7"/><circle cx="108" cy="94" r="1.7"/><circle cx="60" cy="103" r="1.7"/><circle cx="76" cy="92" r="1.7"/><circle cx="92" cy="81" r="1.7"/><circle cx="108" cy="70" r="1.7"/><circle cx="98" cy="175" r="1.7"/><circle cx="114" cy="164" r="1.7"/><circle cx="130" cy="153" r="1.7"/><circle cx="146" cy="142" r="1.7"/><circle cx="98" cy="151" r="1.7"/><circle cx="114" cy="140" r="1.7"/><circle cx="130" cy="129" r="1.7"/><circle cx="146" cy="118" r="1.7"/><circle cx="98" cy="127" r="1.7"/><circle cx="114" cy="116" r="1.7"/><circle cx="130" cy="105" r="1.7"/><circle cx="146" cy="94" r="1.7"/><circle cx="98" cy="103" r="1.7"/><circle cx="114" cy="92" r="1.7"/><circle cx="130" cy="81" r="1.7"/><circle cx="146" cy="70" r="1.7"/><circle cx="136" cy="175" r="1.7"/><circle cx="152" cy="164" r="1.7"/><circle cx="168" cy="153" r="1.7"/><circle cx="184" cy="142" r="1.7"/><circle cx="136" cy="151" r="1.7"/><circle cx="152" cy="140" r="1.7"/><circle cx="168" cy="129" r="1.7"/><circle cx="184" cy="118" r="1.7"/><circle cx="136" cy="127" r="1.7"/><circle cx="152" cy="116" r="1.7"/><circle cx="168" cy="105" r="1.7"/><circle cx="184" cy="94" r="1.7"/><circle cx="136" cy="103" r="1.7"/><circle cx="152" cy="92" r="1.7"/><circle cx="168" cy="81" r="1.7"/><circle cx="184" cy="70" r="1.7"/><circle cx="174" cy="175" r="1.7"/><circle cx="190" cy="164" r="1.7"/><circle cx="206" cy="153" r="1.7"/><circle cx="222" cy="142" r="1.7"/><circle cx="174" cy="151" r="1.7"/><circle cx="190" cy="140" r="1.7"/><circle cx="206" cy="129" r="1.7"/><circle cx="222" cy="118" r="1.7"/><circle cx="174" cy="127" r="1.7"/><circle cx="190" cy="116" r="1.7"/><circle cx="206" cy="105" r="1.7"/><circle cx="222" cy="94" r="1.7"/><circle cx="174" cy="103" r="1.7"/><circle cx="190" cy="92" r="1.7"/><circle cx="206" cy="81" r="1.7"/><circle cx="222" cy="70" r="1.7"/><circle cx="212" cy="175" r="1.7"/><circle cx="228" cy="164" r="1.7"/><circle cx="244" cy="153" r="1.7"/><circle cx="260" cy="142" r="1.7"/><circle cx="212" cy="151" r="1.7"/><circle cx="228" cy="140" r="1.7"/><circle cx="244" cy="129" r="1.7"/><circle cx="260" cy="118" r="1.7"/><circle cx="212" cy="127" r="1.7"/><circle cx="228" cy="116" r="1.7"/><circle cx="244" cy="105" r="1.7"/><circle cx="260" cy="94" r="1.7"/><circle cx="212" cy="103" r="1.7"/><circle cx="228" cy="92" r="1.7"/><circle cx="244" cy="81" r="1.7"/><circle cx="260" cy="70" r="1.7"/><circle cx="250" cy="175" r="1.7"/><circle cx="266" cy="164" r="1.7"/><circle cx="282" cy="153" r="1.7"/><circle cx="298" cy="142" r="1.7"/><circle cx="250" cy="151" r="1.7"/><circle cx="266" cy="140" r="1.7"/><circle cx="282" cy="129" r="1.7"/><circle cx="298" cy="118" r="1.7"/><circle cx="250" cy="127" r="1.7"/><circle cx="266" cy="116" r="1.7"/><circle cx="282" cy="105" r="1.7"/><circle cx="298" cy="94" r="1.7"/><circle cx="250" cy="103" r="1.7"/><circle cx="266" cy="92" r="1.7"/><circle cx="282" cy="81" r="1.7"/><circle cx="298" cy="70" r="1.7"/><circle cx="288" cy="175" r="1.7"/><circle cx="304" cy="164" r="1.7"/><circle cx="320" cy="153" r="1.7"/><circle cx="336" cy="142" r="1.7"/><circle cx="288" cy="151" r="1.7"/><circle cx="304" cy="140" r="1.7"/><circle cx="320" cy="129" r="1.7"/><circle cx="336" cy="118" r="1.7"/><circle cx="288" cy="127" r="1.7"/><circle cx="304" cy="116" r="1.7"/><circle cx="320" cy="105" r="1.7"/><circle cx="336" cy="94" r="1.7"/><circle cx="288" cy="103" r="1.7"/><circle cx="304" cy="92" r="1.7"/><circle cx="320" cy="81" r="1.7"/><circle cx="336" cy="70" r="1.7"/><circle cx="326" cy="175" r="1.7"/><circle cx="342" cy="164" r="1.7"/><circle cx="358" cy="153" r="1.7"/><circle cx="374" cy="142" r="1.7"/><circle cx="326" cy="151" r="1.7"/><circle cx="342" cy="140" r="1.7"/><circle cx="358" cy="129" r="1.7"/><circle cx="374" cy="118" r="1.7"/><circle cx="326" cy="127" r="1.7"/><circle cx="342" cy="116" r="1.7"/><circle cx="358" cy="105" r="1.7"/><circle cx="374" cy="94" r="1.7"/><circle cx="326" cy="103" r="1.7"/><circle cx="342" cy="92" r="1.7"/><circle cx="358" cy="81" r="1.7"/><circle cx="374" cy="70" r="1.7"/></g>
+                </g>
+                <g class="lat-layer lat-dims">
+                  <path class="lat-dim" d="M60 186V192M98 186V192M60 189H98 M45 175H51M45 103H51M48 175V103 M60 228H352 M346 224l6 4-6 4"/>
+                  <text class="lat-text lat-mid" x="79" y="204">a</text>
+                  <text class="lat-text lat-mid" x="36" y="143">L</text>
+                  <text class="lat-text" x="60" y="242">Euclidean time t</text>
+                </g>
+                <g class="lat-layer lat-fields">
+                  <path class="lat-hl-link" d="M212 103L250 103"/>
+                  <path class="lat-hl-plaq" d="M266 92L304 92L320 81L282 81Z"/>
+                  <circle class="lat-hl-site" cx="152" cy="92" r="4.5"/>
+                  <path class="lat-leader" d="M152 86V38 M231 100V58 M293 77V38"/>
+                  <text class="lat-text lat-mid lat-t-site" x="152" y="32">quark field ψ (site)</text>
+                  <text class="lat-text lat-mid lat-t-link" x="231" y="52">gluon field U (link)</text>
+                  <text class="lat-text lat-mid lat-t-plaq" x="313" y="32">plaquette</text>
+                </g>
+                <g class="lat-layer lat-corr">
+                  <path class="lat-sink" d="M288 175L288 103L336 70L336 142Z"/>
+                  <path class="lat-prop" d="M114 140C165 72 255 62 320 105 M114 140C190 205 300 175 320 105"/>
+                  <path class="lat-prop-arrow" d="M209.7 84.2L214.2 80.5L208.8 78.3 M239.8 169.7L235.6 173.7L241.1 175.5"/>
+                  <circle class="lat-src" cx="114" cy="140" r="4.5"/>
+                  <circle class="lat-snk" cx="320" cy="105" r="4"/>
+                  <path class="lat-dim" d="M98 204V210M288 204V210M98 207H288"/>
+                  <text class="lat-text lat-mid" x="193" y="221">t = 5a</text>
+                  <text class="lat-text lat-end lat-t-src" x="106" y="156">j(0)</text>
+                  <text class="lat-text lat-end lat-t-snk" x="414" y="50">j(t, x), summed</text>
+                  <text class="lat-text lat-end lat-t-snk" x="414" y="65">over this slice</text>
+                  <text class="lat-text lat-mid" x="205" y="44">quark propagators</text>
+                </g>
+                <g class="lat-layer lat-cont">
+                  <path class="lat-fine" d="M70 66V166M70 66H170M95 66V166M70 91H170M120 66V166M70 116H170M145 66V166M70 141H170M170 66V166M70 166H170"/>
+                  <path class="lat-fine" d="M250 66V166M250 66H350M260 66V166M250 76H350M270 66V166M250 86H350M280 66V166M250 96H350M290 66V166M250 106H350M300 66V166M250 116H350M310 66V166M250 126H350M320 66V166M250 136H350M330 66V166M250 146H350M340 66V166M250 156H350M350 66V166M250 166H350"/>
+                  <path class="lat-dim" d="M188 116H232 M226 112l6 4-6 4"/>
+                  <text class="lat-text lat-mid" x="210" y="106">a → 0</text>
+                  <text class="lat-text lat-mid" x="120" y="186">a ≈ 0.099 fm</text>
+                  <text class="lat-text lat-mid" x="300" y="186">a ≈ 0.039 fm</text>
+                  <text class="lat-text lat-mid" x="210" y="50">the same 0.4 fm square</text>
+                </g>
+              </svg>
+          <ol class="step-text" aria-live="polite">
+            <li data-step-text="1"><strong>The grid.</strong> Lattice QCD replaces continuous spacetime by a four-dimensional grid of points with spacing a, in a box of spatial size L and finite time extent. Time is Euclidean: correlations decay with t instead of oscillating, so t is not real time. The picture shows time and two of the three space directions.</li>
+            <li data-step-text="2"><strong>Quarks and gluons.</strong> Quark fields live on the sites. Gluon fields live on the links between neighbouring sites, as SU(3) matrices U. The gluon action is built from the smallest closed loops of links, the plaquettes. Monte Carlo methods generate many gluon-field configurations, each with probability proportional to e<sup>−S</sup>, where S is the Euclidean action including the effect of the quarks.</li>
+            <li data-step-text="3"><strong>A correlation function.</strong> A current such as the electromagnetic current j creates a quark–antiquark pair at time 0 and absorbs it at time t, summed over all sites of that time slice. Quark propagators, found by solving the lattice Dirac equation on each configuration, connect the two. Averaging over configurations gives G(t) at the lattice times t = a, 2a, …. The lines are symbolic: a propagator includes all paths through the lattice. This is the quark-connected part; quark-disconnected parts have a separate quark loop at each end.</li>
+            <li data-step-text="4"><strong>Continuum limit.</strong> Results at several lattice spacings are extrapolated to a → 0, with finite-volume effects corrected, at physical quark masses or extrapolated to them. The window paper used 24 ensembles with six spacings between 0.039 and 0.099 fm; both squares here are about 0.4 fm across.</li>
+          </ol>
+          <figcaption>A real lattice has four dimensions and tens to hundreds of points in each; the πγ → ππ study used 32³ × 96 points. Here eight time slices of four by four points are drawn.</figcaption>
+        </figure>
+          <details class="fig-notes"><summary>About lattice QCD as a tool</summary>
+          <p>Lattice QCD computes the strong interaction at low energies, where perturbation theory fails, with uncertainties that can be estimated and reduced. It is not the only tool, since experiment, dispersion theory and effective field theories all contribute, but it is arguably the best to date for the strong interaction’s non-perturbative physics.</p>
+          <p>The lattice also provides the standard non-perturbative definition of QCD. With Ginsparg–Wilson fermions it keeps an exact form of chiral symmetry at finite lattice spacing, and the flavour-singlet chiral Ward identities have the correct anomaly (<a href="https://arxiv.org/abs/hep-lat/9802011">Lüscher, 1998</a>). With the Wilson-type and twisted-mass fermions used in most of my work, chiral symmetry and the anomaly are recovered as the lattice spacing goes to zero.</p>
+          <p>Whether four-dimensional gauge theories exist as rigorous mathematical objects is a Millennium Prize problem. As of November 2026, OpenAI has announced an AI-generated proof of the existence of pure Yang–Mills theory, gauge fields without quarks. A committee chaired by David Gross has affirmed that the proof is formally verified in Lean. It is not yet published, and the mass gap remains open (<a href="https://www.scientificamerican.com/article/openais-shepherds-affirm-blockbuster-physics-result/">Scientific American</a>).</p>
+          </details>
+        </details>
+        <h3 class="pillars-heading">Research pillars</h3>
+        <article class="pillar" id="pillar-dark-matter" aria-labelledby="pillar-dark-matter-title">
+          <svg class="pillar-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="4.5" class="ic-fill"/><circle cx="16" cy="16" r="11" class="ic-dash"/></svg>
+          <div class="pillar-body">
+            <h3 id="pillar-dark-matter-title"><span class="pillar-number">1</span> Calibrating the hunt for dark matter</h3>
+            <p class="pillar-question"><strong>The big question:</strong> How do we detect invisible dark matter when it bumps into ordinary atoms?</p>
+            <figure class="pillar-visual">
+              <svg class="pv-svg" viewBox="0 0 320 120" role="img" aria-labelledby="pv-dm-title pv-dm-desc">
+                <title id="pv-dm-title">Dark matter scattering off a nucleus</title>
+                <desc id="pv-dm-desc">A dark-matter particle, chi, comes in, scatters off a nucleus drawn as a cluster of nucleons, and leaves; the nucleus recoils.</desc>
+                <path class="pv-dark" d="M28 26 L146 60"/><path class="pv-dark" d="M176 60 L296 22"/>
+                <path class="pv-arrow" d="M120 47l9 6-11 1 M268 26l11-1-8 7"/>
+                <circle class="pv-nucleon" cx="160" cy="64" r="7"/><circle class="pv-nucleon pv-alt" cx="172" cy="70" r="7"/><circle class="pv-nucleon" cx="152" cy="76" r="7"/><circle class="pv-nucleon pv-alt" cx="166" cy="82" r="7"/><circle class="pv-nucleon" cx="178" cy="58" r="7"/><circle class="pv-nucleon pv-alt" cx="146" cy="60" r="7"/><circle class="pv-nucleon" cx="160" cy="50" r="7"/>
+                <path class="pv-line" d="M178 86 L214 108"/><path class="pv-arrow" d="M204 107l10 1-5-9"/>
+                <circle class="pv-chi" cx="22" cy="24" r="8"/><circle class="pv-chi" cx="302" cy="20" r="8"/>
+                <text class="pv-text pv-mid pv-greek" x="22" y="50">χ</text><text class="pv-text pv-mid pv-greek" x="302" y="46">χ</text>
+                <text class="pv-text pv-mid" x="162" y="30">nucleus</text>
+                <text class="pv-text" x="220" y="112">recoil</text>
+                <text class="pv-text pv-accent" x="20" y="108">rate depends on the σ-terms</text>
+              </svg>
+              <figcaption>A dark-matter particle χ scattering off a nucleus (schematic).</figcaption>
+            </figure>
+            <details class="pillar-more">
+              <summary>Read more: dark matter and nucleon σ-terms</summary>
+              <h4>The physics</h4>
+              <p>Dark matter is about 85% of the matter in the Universe. If it scatters off nuclei through scalar interactions, the rate depends on the nucleon σ-terms (<a href="https://arxiv.org/abs/1506.04142">Hoferichter et al., 2015</a>). For σ<sub>πN</sub>, phenomenology gives 59.1 ± 3.5 MeV, but lattice results long sat near 42 MeV; excited Nπ states may explain the gap (<a href="https://arxiv.org/abs/2105.12095">Gupta et al., 2021</a>).</p>
+              <h4>My approach</h4>
+              <p>Lattice QCD at the physical pion mass, in the continuum limit, with a variational treatment of excited states. The result is σ<sub>πN</sub> = 53.0(7.4)(1.6) MeV.</p>
+              <h4>Key works</h4>
+              <ul class="key-works">
+                <li><a href="https://arxiv.org/abs/2611.14103">Nucleon sigma terms in lattice QCD at physical pion mass and in the continuum</a><span>C. Alexandrou et al., arXiv:2611.14103 (2026), preprint</span></li>
+                <li><a href="https://arxiv.org/abs/2610.20362">Excited-state effects in nucleon sigma terms from a variational analysis</a><span>C. Alexandrou et al., arXiv:2610.20362 (2026), preprint</span></li>
+              </ul>
+              <figure class="research-figure sigma-figure" aria-labelledby="sigma-figure-title">
+              <p class="figure-title" id="sigma-figure-title">The pion–nucleon σ-term: phenomenology and lattice QCD</p>
+              <svg class="sigma-plot" viewBox="0 0 420 188" role="img" aria-labelledby="sigma-title sigma-description">
+                <title id="sigma-title">Determinations of the pion–nucleon sigma term</title>
+                <desc id="sigma-description">Pion–nucleon scattering, 2015: 59.1 plus or minus 3.5 MeV. Lattice, standard analysis: 41.9 plus or minus 4.9 MeV. The same lattice data including nucleon–pion and nucleon–two-pion states: 59.6 plus or minus 7.4 MeV. This work, a 2026 preprint: 53.0 plus or minus 7.6 MeV. Bars show one standard deviation.</desc>
+                <path class="plot-axis" d="M178 160H408 M178 160v4 M235.5 160v4 M293 160v4 M350.5 160v4 M408 160v4"/>
+                <g class="sig-row sig-pheno" data-value="59.1" data-error="3.50"><text class="w-text w-text-end" x="168" y="34">πN scattering, 2015</text><path class="sig-bar" d="M325.2 30H365.5 M325.2 25v10 M365.5 25v10"/><circle cx="345.3" cy="30" r="4"/><text class="w-text w-text-mid" x="345.3" y="20">59.1 ± 3.5</text></g><g class="sig-row sig-lat" data-value="41.9" data-error="4.90"><text class="w-text w-text-end" x="168" y="70">Lattice, standard</text><path class="sig-bar" d="M218.2 66H274.6 M218.2 61v10 M274.6 61v10"/><circle cx="246.4" cy="66" r="4"/><text class="w-text w-text-mid" x="246.4" y="56">41.9 ± 4.9</text></g><g class="sig-row sig-lat" data-value="59.6" data-error="7.40"><text class="w-text w-text-end" x="168" y="106">Same data + Nπ, Nππ</text><path class="sig-bar" d="M305.7 102H390.8 M305.7 97v10 M390.8 97v10"/><circle cx="348.2" cy="102" r="4"/><text class="w-text w-text-mid" x="348.2" y="92">59.6 ± 7.4</text></g><g class="sig-row sig-this" data-value="53.0" data-error="7.57"><text class="w-text w-text-end" x="168" y="142">This work, preprint</text><path class="sig-bar" d="M266.7 138H353.8 M266.7 133v10 M353.8 133v10"/><circle cx="310.2" cy="138" r="4"/><text class="w-text w-text-mid" x="310.2" y="128">53.0 ± 7.6</text></g>
+                <g class="w-text"><text class="w-text-mid" x="178" y="176">30</text><text class="w-text-mid" x="235.5" y="176">40</text><text class="w-text-mid" x="293" y="176">50</text><text class="w-text-mid" x="350.5" y="176">60</text><text class="w-text-mid" x="408" y="176">70</text><text class="w-text-end" x="158" y="176">σ<tspan class="w-sub" dy="3">πN</tspan><tspan dy="-3"> (MeV)</tspan></text></g>
+              </svg>
+              <figcaption>The pion–nucleon σ-term from phenomenology and lattice QCD. Bars show ±1σ. <details class="fig-notes"><summary>About this figure</summary><p>σ<sub>πN</sub> = m<sub>ud</sub>⟨N|ūu + d̄d|N⟩, with m<sub>ud</sub> the average up and down quark mass. The first row is a Roy–Steiner analysis of pion–nucleon scattering with pionic-atom data (<a href="https://arxiv.org/abs/1506.04142">Hoferichter et al., 2015</a>). The next two rows are the same lattice data analysed without and with Nπ and Nππ excited states (<a href="https://arxiv.org/abs/2105.12095">Gupta et al., 2021</a>). The last row is this preprint, at the physical pion mass and in the continuum limit, with statistical and systematic uncertainties combined in quadrature. Bars show ±1σ.</p></details></figcaption>
+            </figure>
+            </details>
+          </div>
+        </article>
+        <article class="pillar" id="pillar-g2" aria-labelledby="pillar-g2-title">
+          <svg class="pillar-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><ellipse cx="16" cy="20" rx="11" ry="4" class="ic-line"/><path d="M16 20 L22 6" class="ic-accent"/><path d="M18.4 7.2 L22 6 L22.6 9.7" class="ic-accent"/></svg>
+          <div class="pillar-body">
+            <h3 id="pillar-g2-title"><span class="pillar-number">2</span> Testing the limits of the Standard Model: the muon g − 2</h3>
+            <p class="pillar-question"><strong>The big question:</strong> Is an undiscovered fifth force of nature tugging on the muon?</p>
+            <figure class="research-figure hvp-figure" aria-labelledby="hvp-figure-title">
+              <p class="figure-title" id="hvp-figure-title">The hadronic vacuum polarization (HVP) contribution</p>
+              <svg class="hvp-plot" viewBox="0 0 420 236" role="img" aria-labelledby="hvp-title hvp-description">
+                <title id="hvp-title">Leading-order hadronic vacuum polarization diagram</title>
+                <desc id="hvp-description">A muon line runs from left to right. At a vertex on the left it emits a virtual photon, drawn as a wavy line rising to a shaded blob labelled hadrons, which contains a symbolic quark–antiquark loop with two gluons. A second wavy virtual-photon line descends from the blob to a vertex on the right, where the muon absorbs it. Between the two vertices, a wavy external-field photon attaches to the muon line from below.</desc>
+                <g class="hvp-base">
+                  <path class="hvp-blob" d="M160 82 A50 32 0 1 0 260 82 A50 32 0 1 0 160 82 Z"/>
+                  <path class="hvp-mu hvp-seg-in" pathLength="1" d="M20 180H110"/>
+                  <path class="hvp-mu hvp-seg-ac" pathLength="1" d="M110 180H210"/>
+                  <path class="hvp-mu hvp-seg-cb" pathLength="1" d="M210 180H310"/>
+                  <path class="hvp-mu hvp-seg-out" pathLength="1" d="M310 180H400"/>
+                  <path class="hvp-photon hvp-seg-up" pathLength="1" d="M110 180 L113.6 180.8 L115.4 180.2 L114.7 177.8 L112.6 174.4 L111.2 171.5 L112 170.3 L115.1 170.7 L119 171.7 L121.6 171.7 L121.7 170 L119.9 166.8 L118 163.5 L117.9 161.6 L120.3 161.5 L124.2 162.5 L127.4 163 L128.5 161.9 L127.2 159.1 L125.1 155.7 L124.2 153.2 L125.8 152.5 L129.3 153.2 L133 154 L135 153.6 L134.4 151.4 L132.4 148 L130.9 145 L131.5 143.6 L134.4 143.9 L138.3 144.9 L141.1 145.1 L141.4 143.5 L139.8 140.4 L137.8 137.1 L137.5 135 L139.7 134.7 L143.4 135.6 L146.8 136.3 L148.1 135.4 L147.1 132.7 L144.9 129.3 L143.9 126.6 L145.2 125.7 L148.6 126.4 L152.3 127.3 L154.5 127 L154.2 124.9 L152.2 121.6 L150.6 118.5 L150.9 116.9 L153.7 117.1 L157.6 118.1 L160.5 118.4 L161.1 117 L159.6 114 L157.6 110.6 L157 108.4 L159 108 L162.7 108.8 L166.2 109.5 L167.8 108.8 L166.9 106.3 L164.8 102.9 L163.5 100.1 L164.6 99 L167.8 99.5 L171.7 100.5 L174.1 100.4 L174 98.5 L172.1 95.2 L170.3 92 L170.4 90.3 L173 90.3 L176.9 91.3 L180 91.7 L180.8 90.5 L179.4 87.6 L177.3 84.2 L176.6 81.8 L178.4 81.2 L182 82"/>
+                  <path class="hvp-photon hvp-seg-down" pathLength="1" d="M238 82 L236.2 85.2 L236.2 87.1 L238.7 87.1 L242.5 86.1 L245.7 85.6 L246.7 86.8 L245.3 89.7 L243.2 93.1 L242.4 95.5 L244.1 96.2 L247.6 95.4 L251.3 94.6 L253.2 95.1 L252.6 97.4 L250.5 100.8 L249 103.7 L249.7 105.1 L252.8 104.7 L256.6 103.7 L259.3 103.6 L259.6 105.3 L257.8 108.4 L255.9 111.7 L255.7 113.7 L258 113.9 L261.8 112.9 L265.1 112.4 L266.3 113.4 L265.1 116.1 L263 119.5 L262 122.1 L263.5 122.9 L266.9 122.2 L270.7 121.3 L272.7 121.7 L272.3 123.8 L270.3 127.2 L268.7 130.2 L269.2 131.7 L272.1 131.5 L275.9 130.5 L278.8 130.3 L279.3 131.8 L277.7 134.8 L275.7 138.2 L275.3 140.3 L277.3 140.7 L281.1 139.8 L284.5 139.1 L286 139.9 L285 142.5 L282.9 145.9 L281.7 148.6 L282.9 149.6 L286.2 149.1 L290 148.1 L292.3 148.3 L292.1 150.3 L290.2 153.6 L288.4 156.7 L288.7 158.4 L291.4 158.3 L295.2 157.3 L298.3 156.9 L299 158.3 L297.5 161.2 L295.4 164.6 L294.8 166.9 L296.7 167.4 L300.4 166.6 L303.9 165.8 L305.6 166.5 L304.8 168.9 L302.7 172.3 L301.3 175.2 L302.3 176.4 L305.5 175.9 L309.3 174.9 L311.8 174.9 L311.8 176.8 L310 180"/>
+                  <path class="hvp-external hvp-seg-ext" d="M210 228 L213.3 226.5 L213.7 225 L210.8 223.5 L207.2 222 L206.1 220.5 L208.5 219 L212.2 217.5 L214 216 L212.2 214.5 L208.5 213 L206.1 211.5 L207.2 210 L210.8 208.5 L213.7 207 L213.3 205.5 L210 204 L206.7 202.5 L206.3 201 L209.2 199.5 L212.8 198 L213.9 196.5 L211.5 195 L207.8 193.5 L206 192 L207.8 190.5 L211.5 189 L213.9 187.5 L212.8 186 L209.2 184.5 L206.3 183 L206.7 181.5 L210 180"/>
+                  <g class="hvp-qcd">
+                    <path class="hvp-quark" d="M182 82 C190 63 230 63 238 82"/><path class="hvp-quark" d="M238 82 C230 101 190 101 182 82"/>
+                    <path class="hvp-gluon" d="M200 70 L199.3 70.2 L198.6 70.3 L198 70.1 L197.5 69.9 L197.2 69.5 L197 69.1 L197 68.7 L197.3 68.3 L197.7 68 L198.2 67.8 L198.9 67.7 L199.6 67.8 L200.3 68.2 L201.1 68.6 L201.7 69.3 L202.3 70.1 L202.7 71.1 L202.9 72.1 L203 73.2 L202.9 74.2 L202.6 75.2 L202.1 76.1 L201.5 76.9 L200.8 77.5 L200.1 78 L199.4 78.2 L198.6 78.3 L198 78.2 L197.5 77.9 L197.2 77.6 L197 77.2 L197 76.7 L197.2 76.3 L197.6 76 L198.1 75.8 L198.8 75.7 L199.5 75.8 L200.2 76.1 L201 76.6 L201.6 77.2 L202.2 78 L202.6 78.9 L202.9 80 L203 81 L202.9 82.1 L202.6 83.1 L202.2 84 L201.6 84.8 L200.9 85.4 L200.2 85.9 L199.5 86.2 L198.7 86.3 L198.1 86.2 L197.6 86 L197.2 85.6 L197 85.2 L197 84.8 L197.2 84.4 L197.5 84.1 L198 83.8 L198.7 83.7 L199.4 83.8 L200.1 84.1 L200.9 84.5 L201.5 85.1 L202.1 85.9 L202.6 86.8 L202.9 87.8 L203 88.9 L202.9 89.9 L202.7 91 L202.3 91.9 L201.7 92.7 L201 93.4 L200.3 93.9"/><path class="hvp-gluon" d="M220 70 L219.3 70.2 L218.6 70.3 L218 70.1 L217.5 69.9 L217.2 69.5 L217 69.1 L217 68.7 L217.3 68.3 L217.7 68 L218.2 67.8 L218.9 67.7 L219.6 67.8 L220.3 68.2 L221.1 68.6 L221.7 69.3 L222.3 70.1 L222.7 71.1 L222.9 72.1 L223 73.2 L222.9 74.2 L222.6 75.2 L222.1 76.1 L221.5 76.9 L220.8 77.5 L220.1 78 L219.4 78.2 L218.6 78.3 L218 78.2 L217.5 77.9 L217.2 77.6 L217 77.2 L217 76.7 L217.2 76.3 L217.6 76 L218.1 75.8 L218.8 75.7 L219.5 75.8 L220.2 76.1 L221 76.6 L221.6 77.2 L222.2 78 L222.6 78.9 L222.9 80 L223 81 L222.9 82.1 L222.6 83.1 L222.2 84 L221.6 84.8 L220.9 85.4 L220.2 85.9 L219.5 86.2 L218.7 86.3 L218.1 86.2 L217.6 86 L217.2 85.6 L217 85.2 L217 84.8 L217.2 84.4 L217.5 84.1 L218 83.8 L218.7 83.7 L219.4 83.8 L220.1 84.1 L220.9 84.5 L221.5 85.1 L222.1 85.9 L222.6 86.8 L222.9 87.8 L223 88.9 L222.9 89.9 L222.7 91 L222.3 91.9 L221.7 92.7 L221 93.4 L220.3 93.9"/>
+                    <path class="hvp-arrow" d="M207 63.5l6 3.5-6 3.5 M213 93.5l-6 3.5 6 3.5"/>
+                    <g class="hvp-label"><text class="hvp-small" x="210" y="61">q</text><text class="hvp-small" x="210" y="113">q̄</text></g>
+                  </g>
+                  <circle class="hvp-vertex hvp-v-a" cx="110" cy="180" r="3.5"/><circle class="hvp-vertex hvp-v-c" cx="210" cy="180" r="3.5"/><circle class="hvp-vertex hvp-v-b" cx="310" cy="180" r="3.5"/>
+                  <path class="hvp-arrow" d="M62 176l7 4-7 4 M157 176l7 4-7 4 M257 176l7 4-7 4 M352 176l7 4-7 4"/><g class="hvp-label">
+                    <text x="20" y="168">μ</text><text class="w-text-end" x="400" y="168">μ</text>
+                    <text class="w-text-end" x="132" y="126">γ*</text><text x="288" y="126">γ*</text>
+                    <text class="hvp-hadrons" x="210" y="40">hadrons</text>
+                    <text x="222" y="224">external field</text>
+                  </g>
+                </g>
+                <g class="hvp-hi">
+                  <path class="hvp-blob" d="M160 82 A50 32 0 1 0 260 82 A50 32 0 1 0 160 82 Z"/>
+                  <path class="hvp-mu hvp-seg-in" pathLength="1" d="M20 180H110"/>
+                  <path class="hvp-mu hvp-seg-ac" pathLength="1" d="M110 180H210"/>
+                  <path class="hvp-mu hvp-seg-cb" pathLength="1" d="M210 180H310"/>
+                  <path class="hvp-mu hvp-seg-out" pathLength="1" d="M310 180H400"/>
+                  <path class="hvp-photon hvp-seg-up" pathLength="1" d="M110 180 L113.6 180.8 L115.4 180.2 L114.7 177.8 L112.6 174.4 L111.2 171.5 L112 170.3 L115.1 170.7 L119 171.7 L121.6 171.7 L121.7 170 L119.9 166.8 L118 163.5 L117.9 161.6 L120.3 161.5 L124.2 162.5 L127.4 163 L128.5 161.9 L127.2 159.1 L125.1 155.7 L124.2 153.2 L125.8 152.5 L129.3 153.2 L133 154 L135 153.6 L134.4 151.4 L132.4 148 L130.9 145 L131.5 143.6 L134.4 143.9 L138.3 144.9 L141.1 145.1 L141.4 143.5 L139.8 140.4 L137.8 137.1 L137.5 135 L139.7 134.7 L143.4 135.6 L146.8 136.3 L148.1 135.4 L147.1 132.7 L144.9 129.3 L143.9 126.6 L145.2 125.7 L148.6 126.4 L152.3 127.3 L154.5 127 L154.2 124.9 L152.2 121.6 L150.6 118.5 L150.9 116.9 L153.7 117.1 L157.6 118.1 L160.5 118.4 L161.1 117 L159.6 114 L157.6 110.6 L157 108.4 L159 108 L162.7 108.8 L166.2 109.5 L167.8 108.8 L166.9 106.3 L164.8 102.9 L163.5 100.1 L164.6 99 L167.8 99.5 L171.7 100.5 L174.1 100.4 L174 98.5 L172.1 95.2 L170.3 92 L170.4 90.3 L173 90.3 L176.9 91.3 L180 91.7 L180.8 90.5 L179.4 87.6 L177.3 84.2 L176.6 81.8 L178.4 81.2 L182 82"/>
+                  <path class="hvp-photon hvp-seg-down" pathLength="1" d="M238 82 L236.2 85.2 L236.2 87.1 L238.7 87.1 L242.5 86.1 L245.7 85.6 L246.7 86.8 L245.3 89.7 L243.2 93.1 L242.4 95.5 L244.1 96.2 L247.6 95.4 L251.3 94.6 L253.2 95.1 L252.6 97.4 L250.5 100.8 L249 103.7 L249.7 105.1 L252.8 104.7 L256.6 103.7 L259.3 103.6 L259.6 105.3 L257.8 108.4 L255.9 111.7 L255.7 113.7 L258 113.9 L261.8 112.9 L265.1 112.4 L266.3 113.4 L265.1 116.1 L263 119.5 L262 122.1 L263.5 122.9 L266.9 122.2 L270.7 121.3 L272.7 121.7 L272.3 123.8 L270.3 127.2 L268.7 130.2 L269.2 131.7 L272.1 131.5 L275.9 130.5 L278.8 130.3 L279.3 131.8 L277.7 134.8 L275.7 138.2 L275.3 140.3 L277.3 140.7 L281.1 139.8 L284.5 139.1 L286 139.9 L285 142.5 L282.9 145.9 L281.7 148.6 L282.9 149.6 L286.2 149.1 L290 148.1 L292.3 148.3 L292.1 150.3 L290.2 153.6 L288.4 156.7 L288.7 158.4 L291.4 158.3 L295.2 157.3 L298.3 156.9 L299 158.3 L297.5 161.2 L295.4 164.6 L294.8 166.9 L296.7 167.4 L300.4 166.6 L303.9 165.8 L305.6 166.5 L304.8 168.9 L302.7 172.3 L301.3 175.2 L302.3 176.4 L305.5 175.9 L309.3 174.9 L311.8 174.9 L311.8 176.8 L310 180"/>
+                  <path class="hvp-external hvp-seg-ext" d="M210 228 L213.3 226.5 L213.7 225 L210.8 223.5 L207.2 222 L206.1 220.5 L208.5 219 L212.2 217.5 L214 216 L212.2 214.5 L208.5 213 L206.1 211.5 L207.2 210 L210.8 208.5 L213.7 207 L213.3 205.5 L210 204 L206.7 202.5 L206.3 201 L209.2 199.5 L212.8 198 L213.9 196.5 L211.5 195 L207.8 193.5 L206 192 L207.8 190.5 L211.5 189 L213.9 187.5 L212.8 186 L209.2 184.5 L206.3 183 L206.7 181.5 L210 180"/>
+                  <g class="hvp-qcd">
+                    <path class="hvp-quark" d="M182 82 C190 63 230 63 238 82"/><path class="hvp-quark" d="M238 82 C230 101 190 101 182 82"/>
+                    <path class="hvp-gluon" d="M200 70 L199.3 70.2 L198.6 70.3 L198 70.1 L197.5 69.9 L197.2 69.5 L197 69.1 L197 68.7 L197.3 68.3 L197.7 68 L198.2 67.8 L198.9 67.7 L199.6 67.8 L200.3 68.2 L201.1 68.6 L201.7 69.3 L202.3 70.1 L202.7 71.1 L202.9 72.1 L203 73.2 L202.9 74.2 L202.6 75.2 L202.1 76.1 L201.5 76.9 L200.8 77.5 L200.1 78 L199.4 78.2 L198.6 78.3 L198 78.2 L197.5 77.9 L197.2 77.6 L197 77.2 L197 76.7 L197.2 76.3 L197.6 76 L198.1 75.8 L198.8 75.7 L199.5 75.8 L200.2 76.1 L201 76.6 L201.6 77.2 L202.2 78 L202.6 78.9 L202.9 80 L203 81 L202.9 82.1 L202.6 83.1 L202.2 84 L201.6 84.8 L200.9 85.4 L200.2 85.9 L199.5 86.2 L198.7 86.3 L198.1 86.2 L197.6 86 L197.2 85.6 L197 85.2 L197 84.8 L197.2 84.4 L197.5 84.1 L198 83.8 L198.7 83.7 L199.4 83.8 L200.1 84.1 L200.9 84.5 L201.5 85.1 L202.1 85.9 L202.6 86.8 L202.9 87.8 L203 88.9 L202.9 89.9 L202.7 91 L202.3 91.9 L201.7 92.7 L201 93.4 L200.3 93.9"/><path class="hvp-gluon" d="M220 70 L219.3 70.2 L218.6 70.3 L218 70.1 L217.5 69.9 L217.2 69.5 L217 69.1 L217 68.7 L217.3 68.3 L217.7 68 L218.2 67.8 L218.9 67.7 L219.6 67.8 L220.3 68.2 L221.1 68.6 L221.7 69.3 L222.3 70.1 L222.7 71.1 L222.9 72.1 L223 73.2 L222.9 74.2 L222.6 75.2 L222.1 76.1 L221.5 76.9 L220.8 77.5 L220.1 78 L219.4 78.2 L218.6 78.3 L218 78.2 L217.5 77.9 L217.2 77.6 L217 77.2 L217 76.7 L217.2 76.3 L217.6 76 L218.1 75.8 L218.8 75.7 L219.5 75.8 L220.2 76.1 L221 76.6 L221.6 77.2 L222.2 78 L222.6 78.9 L222.9 80 L223 81 L222.9 82.1 L222.6 83.1 L222.2 84 L221.6 84.8 L220.9 85.4 L220.2 85.9 L219.5 86.2 L218.7 86.3 L218.1 86.2 L217.6 86 L217.2 85.6 L217 85.2 L217 84.8 L217.2 84.4 L217.5 84.1 L218 83.8 L218.7 83.7 L219.4 83.8 L220.1 84.1 L220.9 84.5 L221.5 85.1 L222.1 85.9 L222.6 86.8 L222.9 87.8 L223 88.9 L222.9 89.9 L222.7 91 L222.3 91.9 L221.7 92.7 L221 93.4 L220.3 93.9"/>
+                    <path class="hvp-arrow" d="M207 63.5l6 3.5-6 3.5 M213 93.5l-6 3.5 6 3.5"/>
+                    <g class="hvp-label"><text class="hvp-small" x="210" y="61">q</text><text class="hvp-small" x="210" y="113">q̄</text></g>
+                  </g>
+                  <circle class="hvp-vertex hvp-v-a" cx="110" cy="180" r="3.5"/><circle class="hvp-vertex hvp-v-c" cx="210" cy="180" r="3.5"/><circle class="hvp-vertex hvp-v-b" cx="310" cy="180" r="3.5"/>
+                  <g class="hvp-label">
+                    <text x="20" y="168">μ</text><text class="w-text-end hvp-l-mo" x="400" y="168">μ</text>
+                    <text class="w-text-end hvp-l-gl" x="132" y="126">γ*</text><text class="hvp-l-gr" x="288" y="126">γ*</text>
+                    <text class="hvp-hadrons hvp-l-had" x="210" y="40">hadrons</text>
+                    <text class="hvp-l-ext" x="222" y="224">external field</text>
+                  </g>
+                </g>
+              </svg>
+              <button class="motion-control" type="button" aria-describedby="caption-hvp" data-duration="10000" hidden>Play animation</button>
+              <ol class="hvp-steps">
+                <li>The muon emits a virtual photon γ* and couples to the external field.</li>
+                <li>γ* turns into hadrons, summed over all possible states.</li>
+                <li>The hadrons turn back into γ*.</li>
+                <li>The muon reabsorbs γ*; the loop shifts a<sub>μ</sub> by a<sub>μ</sub><sup>hvp</sup>.</li>
+              </ol>
+              <figcaption id="caption-hvp">Leading-order hadronic vacuum polarization, of order α². Press Play to follow the diagram. <details class="fig-notes"><summary>About this figure</summary><p>The blob stands for the sum over all hadronic states the photon can produce. The loop changes how the muon couples to the magnetic field; its contribution to the anomalous magnetic moment a<sub>μ</sub> = (g − 2)/2 is a<sub>μ</sub><sup>hvp</sup>. The leading-order HVP diagram, of order α². The hadronic states include two pions, three pions and kaon pairs, with resonances such as the ρ, ω and φ. The blob is drawn as a quark–antiquark loop with gluons because lattice QCD computes it from quark and gluon fields; the loop is symbolic, not a single quark pair, and lattice calculations such as the window paper below include both quark-connected diagrams, like the one drawn, and quark-disconnected ones, with two separate quark loops. The animation is a reading order for one Feynman diagram, not a history in time: the diagram includes all time orderings, and the virtual photon and hadrons are internal to the calculation, not observed particles. In the time-momentum representation used below, the blob enters through the correlator G(t) of the electromagnetic current.</p></details></figcaption>
+            </figure>
+            <details class="pillar-more">
+              <summary>Read more: the muon g − 2 and its hadronic contribution</summary>
+              <h4>The physics</h4>
+              <p>a<sub>μ</sub> = (g − 2)/2 is measured to 127 parts per billion, and for about two decades it seemed to disagree with the Standard Model. The hardest input is the hadronic vacuum polarization. Data-driven evaluations disagree with each other, mainly in the two-pion channel (<a href="https://doi.org/10.1140/epjc/s10052-024-12964-7">Davier et al., 2024</a>), so the <a href="https://arxiv.org/abs/2505.21476">2025 prediction</a> uses lattice QCD and agrees with experiment. Open: why the two-pion data disagree, and how to match the experiment’s precision; the prediction is at 530 parts per billion.</p>
+              <h4>My approach</h4>
+              <p>Window observables from lattice QCD, and the lattice versus data-driven comparison as a probe of new forces such as a dark photon.</p>
+              <h4>Key works</h4>
+              <ul class="key-works">
+                <li><a href="https://arxiv.org/abs/2206.06582">Window observable for the hadronic vacuum polarization contribution to the muon g − 2 from lattice QCD</a><span>M. Cè et al., Physical Review D 106, 114502 (2022)</span></li>
+                <li><a href="https://arxiv.org/abs/2412.12266">Searching for hadronic scale baryonic and dark forces at (g − 2)<sub>μ</sub>’s lattice-vs-dispersion front</a><span>K. Agashe et al., Journal of High Energy Physics 08, 161 (2025)</span></li>
+              </ul>
+              <figure class="research-figure window-figure stepped-figure" data-default-step="3" aria-labelledby="window-figure-title">
+              <p class="figure-title" id="window-figure-title">How the intermediate window is defined</p>
+              <div class="step-controls" role="group" aria-label="Infographic steps" hidden>
+                <button type="button" data-step-to="1" aria-pressed="false">1. Smoothed steps</button>
+                <button type="button" data-step-to="2" aria-pressed="false">2. Intermediate window</button>
+                <button type="button" data-step-to="3" aria-pressed="false">3. Three windows</button>
+                <button type="button" data-step-to="4" aria-pressed="false">4. Why this window</button>
+                <button type="button" class="step-play">Play steps</button>
+              </div>
+              <svg class="window-plot" viewBox="0 0 420 250" role="img" aria-labelledby="window-title window-description">
+                <title id="window-title">Euclidean-time window weights</title>
+                <desc id="window-description">Short-distance, intermediate and long-distance weights for Euclidean time t from 0 to 1.6 femtometres, with t zero = 0.4 femtometres, t one = 1.0 femtometre and smoothing width 0.15 femtometres. The short-distance weight falls from 1 to 0 around 0.4 femtometres, the intermediate weight rises around 0.4 and falls around 1.0 femtometre with maximum about 0.96 at 0.7 femtometres, and the long-distance weight rises to 1 around 1.0 femtometre. At every t the three weights add up to 1.</desc>
+                <path class="w-unit" d="M48 46H408"/>
+                <path class="plot-guide w-guides" d="M138 46V196 M273 46V196"/>
+                <path class="plot-axis" d="M48 46V196H414 M408 192l6 4-6 4"/>
+                <g class="w-text">
+                  <text class="w-text-end" x="40" y="200">0</text><text class="w-text-end" x="40" y="50">1</text>
+                  <text class="w-text-mid" x="16" y="121" transform="rotate(-90 16 121)">weight</text>
+                  <text class="w-text-mid" x="48" y="214">0</text><text class="w-text-mid" x="138" y="214">0.4</text><text class="w-text-mid" x="273" y="214">1.0</text><text class="w-text-mid" x="408" y="214">1.6</text>
+                  <text class="w-text-mid" x="228" y="240">Euclidean time t (fm)</text>
+                  <text class="w-text-mid" x="138" y="38">t<tspan class="w-sub" dy="3">0</tspan></text><text class="w-text-mid" x="273" y="38">t<tspan class="w-sub" dy="3">1</tspan></text>
+                </g>
+                <g class="w-layer w-steps">
+                  <path class="w-curve w-step-curve" data-curve="theta0" d="M48 195.3 L52.5 195.1 L57 194.8 L61.5 194.4 L66 193.9 L70.5 193.3 L75 192.5 L79.5 191.5 L84 190.1 L88.5 188.4 L93 186.3 L97.5 183.5 L102 180.1 L106.5 175.9 L111 170.8 L115.5 164.7 L120 157.6 L124.5 149.5 L129 140.5 L133.5 130.9 L138 121 L142.5 111.1 L147 101.5 L151.5 92.5 L156 84.4 L160.5 77.3 L165 71.2 L169.5 66.1 L174 61.9 L178.5 58.5 L183 55.7 L187.5 53.6 L192 51.9 L196.5 50.5 L201 49.5 L205.5 48.7 L210 48.1 L214.5 47.6 L219 47.2 L223.5 46.9 L228 46.7 L232.5 46.6 L237 46.4 L241.5 46.3 L246 46.2 L250.5 46.2 L255 46.1 L259.5 46.1 L264 46.1 L268.5 46.1 L273 46.1 L277.5 46 L282 46 L286.5 46 L291 46 L295.5 46 L300 46 L304.5 46 L309 46 L313.5 46 L318 46 L322.5 46 L327 46 L331.5 46 L336 46 L340.5 46 L345 46 L349.5 46 L354 46 L358.5 46 L363 46 L367.5 46 L372 46 L376.5 46 L381 46 L385.5 46 L390 46 L394.5 46 L399 46 L403.5 46 L408 46"/>
+                  <path class="w-curve w-step-curve" data-curve="theta1" d="M48 196 L52.5 196 L57 196 L61.5 196 L66 196 L70.5 196 L75 196 L79.5 196 L84 196 L88.5 196 L93 196 L97.5 196 L102 196 L106.5 196 L111 196 L115.5 196 L120 196 L124.5 196 L129 196 L133.5 196 L138 195.9 L142.5 195.9 L147 195.9 L151.5 195.9 L156 195.9 L160.5 195.8 L165 195.8 L169.5 195.7 L174 195.6 L178.5 195.4 L183 195.3 L187.5 195.1 L192 194.8 L196.5 194.4 L201 193.9 L205.5 193.3 L210 192.5 L214.5 191.5 L219 190.1 L223.5 188.4 L228 186.3 L232.5 183.5 L237 180.1 L241.5 175.9 L246 170.8 L250.5 164.7 L255 157.6 L259.5 149.5 L264 140.5 L268.5 130.9 L273 121 L277.5 111.1 L282 101.5 L286.5 92.5 L291 84.4 L295.5 77.3 L300 71.2 L304.5 66.1 L309 61.9 L313.5 58.5 L318 55.7 L322.5 53.6 L327 51.9 L331.5 50.5 L336 49.5 L340.5 48.7 L345 48.1 L349.5 47.6 L354 47.2 L358.5 46.9 L363 46.7 L367.5 46.6 L372 46.4 L376.5 46.3 L381 46.2 L385.5 46.2 L390 46.1 L394.5 46.1 L399 46.1 L403.5 46.1 L408 46.1"/>
+                  <g class="w-layer w-step-labels"><g class="w-lattice-times"><circle cx="48" cy="196" r="2"/><circle cx="70.3" cy="196" r="2"/><circle cx="92.7" cy="196" r="2"/><circle cx="115" cy="196" r="2"/><circle cx="137.4" cy="196" r="2"/><circle cx="159.7" cy="196" r="2"/><circle cx="182.1" cy="196" r="2"/><circle cx="204.4" cy="196" r="2"/><circle cx="226.7" cy="196" r="2"/><circle cx="249.1" cy="196" r="2"/><circle cx="271.4" cy="196" r="2"/><circle cx="293.8" cy="196" r="2"/><circle cx="316.1" cy="196" r="2"/><circle cx="338.5" cy="196" r="2"/><circle cx="360.8" cy="196" r="2"/><circle cx="383.1" cy="196" r="2"/><circle cx="405.5" cy="196" r="2"/></g><path class="w-sharp" d="M48 196H138V46H187.5"/><text class="w-text w-text-end" x="128" y="38">sharp step</text>
+                  <text class="w-text w-text-end" x="128" y="112">Θ(t, t<tspan class="w-sub" dy="3">0</tspan><tspan dy="-3">, Δ)</tspan></text>
+                  <text class="w-text w-text-end" x="263" y="112">Θ(t, t<tspan class="w-sub" dy="3">1</tspan><tspan dy="-3">, Δ)</tspan></text></g>
+                </g>
+                <g class="w-layer w-id">
+                  <path class="w-curve w-c-id" data-curve="id" d="M48 195.3 L52.5 195.1 L57 194.8 L61.5 194.4 L66 193.9 L70.5 193.3 L75 192.5 L79.5 191.5 L84 190.1 L88.5 188.4 L93 186.3 L97.5 183.5 L102 180.1 L106.5 175.9 L111 170.8 L115.5 164.7 L120 157.6 L124.5 149.5 L129 140.6 L133.5 131 L138 121.1 L142.5 111.1 L147 101.5 L151.5 92.6 L156 84.6 L160.5 77.5 L165 71.4 L169.5 66.4 L174 62.3 L178.5 59 L183 56.5 L187.5 54.5 L192 53.1 L196.5 52.1 L201 51.6 L205.5 51.4 L210 51.6 L214.5 52.1 L219 53.1 L223.5 54.5 L228 56.5 L232.5 59 L237 62.3 L241.5 66.4 L246 71.4 L250.5 77.5 L255 84.6 L259.5 92.6 L264 101.5 L268.5 111.1 L273 121.1 L277.5 131 L282 140.6 L286.5 149.5 L291 157.6 L295.5 164.7 L300 170.8 L304.5 175.9 L309 180.1 L313.5 183.5 L318 186.3 L322.5 188.4 L327 190.1 L331.5 191.5 L336 192.5 L340.5 193.3 L345 193.9 L349.5 194.4 L354 194.8 L358.5 195.1 L363 195.3 L367.5 195.4 L372 195.6 L376.5 195.7 L381 195.8 L385.5 195.8 L390 195.9 L394.5 195.9 L399 195.9 L403.5 195.9 L408 195.9"/>
+                  <text class="w-text w-text-mid" x="205.5" y="120">ID weight</text>
+                  <text class="w-text w-text-mid" x="205.5" y="38">max ≈ 0.96</text>
+                </g>
+                <g class="w-layer w-three">
+                  <g class="w-layer w-dim"><path class="w-curve w-c-sd" data-curve="sd" d="M48 46.7 L52.5 46.9 L57 47.2 L61.5 47.6 L66 48.1 L70.5 48.7 L75 49.5 L79.5 50.5 L84 51.9 L88.5 53.6 L93 55.7 L97.5 58.5 L102 61.9 L106.5 66.1 L111 71.2 L115.5 77.3 L120 84.4 L124.5 92.5 L129 101.5 L133.5 111.1 L138 121 L142.5 130.9 L147 140.5 L151.5 149.5 L156 157.6 L160.5 164.7 L165 170.8 L169.5 175.9 L174 180.1 L178.5 183.5 L183 186.3 L187.5 188.4 L192 190.1 L196.5 191.5 L201 192.5 L205.5 193.3 L210 193.9 L214.5 194.4 L219 194.8 L223.5 195.1 L228 195.3 L232.5 195.4 L237 195.6 L241.5 195.7 L246 195.8 L250.5 195.8 L255 195.9 L259.5 195.9 L264 195.9 L268.5 195.9 L273 195.9 L277.5 196 L282 196 L286.5 196 L291 196 L295.5 196 L300 196 L304.5 196 L309 196 L313.5 196 L318 196 L322.5 196 L327 196 L331.5 196 L336 196 L340.5 196 L345 196 L349.5 196 L354 196 L358.5 196 L363 196 L367.5 196 L372 196 L376.5 196 L381 196 L385.5 196 L390 196 L394.5 196 L399 196 L403.5 196 L408 196"/><text class="w-name w-t-sd" x="70.5" y="91">SD</text></g>
+                  <path class="w-curve w-c-id" data-curve="id" d="M48 195.3 L52.5 195.1 L57 194.8 L61.5 194.4 L66 193.9 L70.5 193.3 L75 192.5 L79.5 191.5 L84 190.1 L88.5 188.4 L93 186.3 L97.5 183.5 L102 180.1 L106.5 175.9 L111 170.8 L115.5 164.7 L120 157.6 L124.5 149.5 L129 140.6 L133.5 131 L138 121.1 L142.5 111.1 L147 101.5 L151.5 92.6 L156 84.6 L160.5 77.5 L165 71.4 L169.5 66.4 L174 62.3 L178.5 59 L183 56.5 L187.5 54.5 L192 53.1 L196.5 52.1 L201 51.6 L205.5 51.4 L210 51.6 L214.5 52.1 L219 53.1 L223.5 54.5 L228 56.5 L232.5 59 L237 62.3 L241.5 66.4 L246 71.4 L250.5 77.5 L255 84.6 L259.5 92.6 L264 101.5 L268.5 111.1 L273 121.1 L277.5 131 L282 140.6 L286.5 149.5 L291 157.6 L295.5 164.7 L300 170.8 L304.5 175.9 L309 180.1 L313.5 183.5 L318 186.3 L322.5 188.4 L327 190.1 L331.5 191.5 L336 192.5 L340.5 193.3 L345 193.9 L349.5 194.4 L354 194.8 L358.5 195.1 L363 195.3 L367.5 195.4 L372 195.6 L376.5 195.7 L381 195.8 L385.5 195.8 L390 195.9 L394.5 195.9 L399 195.9 L403.5 195.9 L408 195.9"/><text class="w-name w-t-id" x="205.5" y="91">ID</text>
+                  <g class="w-layer w-dim"><path class="w-curve w-c-ld" data-curve="ld" d="M48 196 L52.5 196 L57 196 L61.5 196 L66 196 L70.5 196 L75 196 L79.5 196 L84 196 L88.5 196 L93 196 L97.5 196 L102 196 L106.5 196 L111 196 L115.5 196 L120 196 L124.5 196 L129 196 L133.5 196 L138 195.9 L142.5 195.9 L147 195.9 L151.5 195.9 L156 195.9 L160.5 195.8 L165 195.8 L169.5 195.7 L174 195.6 L178.5 195.4 L183 195.3 L187.5 195.1 L192 194.8 L196.5 194.4 L201 193.9 L205.5 193.3 L210 192.5 L214.5 191.5 L219 190.1 L223.5 188.4 L228 186.3 L232.5 183.5 L237 180.1 L241.5 175.9 L246 170.8 L250.5 164.7 L255 157.6 L259.5 149.5 L264 140.5 L268.5 130.9 L273 121 L277.5 111.1 L282 101.5 L286.5 92.5 L291 84.4 L295.5 77.3 L300 71.2 L304.5 66.1 L309 61.9 L313.5 58.5 L318 55.7 L322.5 53.6 L327 51.9 L331.5 50.5 L336 49.5 L340.5 48.7 L345 48.1 L349.5 47.6 L354 47.2 L358.5 46.9 L363 46.7 L367.5 46.6 L372 46.4 L376.5 46.3 L381 46.2 L385.5 46.2 L390 46.1 L394.5 46.1 L399 46.1 L403.5 46.1 L408 46.1"/><text class="w-name w-t-ld" x="363" y="91">LD</text></g>
+                  <path class="w-sum" data-curve="sum" d="M48 46 L52.5 46 L57 46 L61.5 46 L66 46 L70.5 46 L75 46 L79.5 46 L84 46 L88.5 46 L93 46 L97.5 46 L102 46 L106.5 46 L111 46 L115.5 46 L120 46 L124.5 46 L129 46 L133.5 46 L138 46 L142.5 46 L147 46 L151.5 46 L156 46 L160.5 46 L165 46 L169.5 46 L174 46 L178.5 46 L183 46 L187.5 46 L192 46 L196.5 46 L201 46 L205.5 46 L210 46 L214.5 46 L219 46 L223.5 46 L228 46 L232.5 46 L237 46 L241.5 46 L246 46 L250.5 46 L255 46 L259.5 46 L264 46 L268.5 46 L273 46 L277.5 46 L282 46 L286.5 46 L291 46 L295.5 46 L300 46 L304.5 46 L309 46 L313.5 46 L318 46 L322.5 46 L327 46 L331.5 46 L336 46 L340.5 46 L345 46 L349.5 46 L354 46 L358.5 46 L363 46 L367.5 46 L372 46 L376.5 46 L381 46 L385.5 46 L390 46 L394.5 46 L399 46 L403.5 46 L408 46"/>
+                  <text class="w-text w-text-end" x="408" y="38">SD + ID + LD = 1</text>
+                </g>
+                <g class="w-layer w-notes w-text">
+                  <text x="48" y="20">← short t: discretization</text>
+                  <text class="w-text-end" x="408" y="20">long t: noise, finite size →</text>
+                </g>
+              </svg>
+              <ol class="step-text" aria-live="polite">
+                <li data-step-text="1"><strong>Smoothed steps.</strong> A sharp step (dotted) would jump from 0 to 1 exactly at t<sub>0</sub>. The windows instead use a smoothed step, Θ(t, t′, Δ) = ½[1 + tanh((t − t′)/Δ)], which spreads the jump over a width set by Δ: it is 0.12 at t′ − Δ, 0.5 at t′ and 0.88 at t′ + Δ, and becomes a sharp step as Δ → 0. Lattice data exist only at discrete times, and the smoothing helps control discretization effects. RBC/UKQCD, who introduced the windows, chose Δ = 0.15 fm as a sufficiently sharp transition that does not noticeably increase them. The paper uses t<sub>0</sub> = 0.4 fm and t<sub>1</sub> = 1.0 fm. The dots on the time axis mark the lattice times t = na for the coarsest lattice spacing in the paper, a ≈ 0.099 fm.</li>
+                <li data-step-text="2"><strong>Intermediate window.</strong> The difference of the two steps, Θ(t, t<sub>0</sub>, Δ) − Θ(t, t<sub>1</sub>, Δ), is the intermediate-distance (ID) weight. Because the steps are smooth, its maximum, at t&nbsp;=&nbsp;0.7&nbsp;fm, is tanh 2 ≈ 0.96 rather than 1.</li>
+                <li data-step-text="3"><strong>Three windows.</strong> The short-distance (SD) weight 1 − Θ(t, t<sub>0</sub>, Δ) and the long-distance (LD) weight Θ(t, t<sub>1</sub>, Δ) complete the set. At every t the three weights add up to 1, so the three window contributions add up to the full a<sub>μ</sub><sup>hvp</sup>. The axis stops at 1.6 fm; the LD weight stays at 1 for all larger t.</li>
+                <li data-step-text="4"><strong>Why this window.</strong> Short times, t&nbsp;≲&nbsp;0.4&nbsp;fm, are particularly sensitive to discretization effects. At long times the statistical error of G(t) grows exponentially with t, and finite-size effects are largest; the integrand of a<sub>μ</sub><sup>hvp</sup> still contributes sizeably beyond t&nbsp;≈&nbsp;2&nbsp;fm. Lattice results are least affected by these systematic effects in the intermediate window, which carries about one third of a<sub>μ</sub><sup>hvp</sup> and allows precise comparisons between lattice calculations and with data-driven evaluations.</li>
+              </ol>
+              <figcaption>The window weights, from the paper’s definitions; not the correlator or the integrand. <details class="fig-notes"><summary>About this figure</summary><p>The paper’s window observable is a<sub>μ</sub><sup>win</sup> = (α/π)<sup>2</sup> ∫<sub>0</sub><sup>∞</sup> dt K̃(t) G(t) [Θ(t, t<sub>0</sub>, Δ) − Θ(t, t<sub>1</sub>, Δ)], where G(t) is the Euclidean-time correlator of the electromagnetic current and K̃(t) is a known kernel. The plot shows only the exactly defined weights, not the correlator or the integrand. The steps switch between these functions; nothing evolves in time, and Euclidean time is not real time.</p></details></figcaption>
+            </figure>
+              <figure class="research-figure result-figure" aria-labelledby="result-figure-title">
+              <p class="figure-title" id="result-figure-title">Result compared with data-driven evaluations</p>
+              <svg class="result-plot" viewBox="0 0 420 152" role="img" aria-labelledby="result-title result-description">
+                <title id="result-title">Intermediate-window result compared with data-driven evaluations</title>
+                <desc id="result-description">This paper: 237.30 plus or minus 1.46 times ten to the minus ten. Data-driven evaluation from 2022: 229.4 plus or minus 1.4. Data-driven evaluation using CMD-3 two-pion data: 234.2 plus or minus 1.6. All in units of ten to the minus ten. Bars show one standard deviation.</desc>
+                <path class="plot-axis" d="M178 124H408 M206.8 124v4 M264.2 124v4 M321.8 124v4 M379.2 124v4"/>
+                <g class="res-lattice" data-value="237.30" data-error="1.46"><text class="w-text w-text-end" x="168" y="34">This paper (lattice QCD)</text><path class="res-bar" d="M319.5 30H361.4 M319.5 25v10 M361.4 25v10"/><circle cx="340.4" cy="30" r="4"/><text class="w-text w-text-mid" x="340.4" y="20">237.30 ± 1.46</text></g>
+                <g class="res-data" data-value="229.40" data-error="1.40"><text class="w-text w-text-end" x="168" y="70">Data-driven, 2022</text><path class="res-bar" d="M206.8 66H247 M206.8 61v10 M247 61v10"/><circle cx="226.9" cy="66" r="4"/><text class="w-text w-text-mid" x="226.9" y="56">229.4 ± 1.4</text></g>
+                <g class="res-cmd3" data-value="234.20" data-error="1.56"><text class="w-text w-text-end" x="168" y="106">Data-driven, CMD-3 ππ</text><path class="res-bar" d="M273.4 102H318.3 M273.4 97v10 M318.3 97v10"/><circle cx="295.9" cy="102" r="4"/><text class="w-text w-text-mid" x="295.9" y="92">234.2 ± 1.6</text></g>
+                <g class="w-text"><text class="w-text-mid" x="206.8" y="140">228</text><text class="w-text-mid" x="264.2" y="140">232</text><text class="w-text-mid" x="321.8" y="140">236</text><text class="w-text-mid" x="379.2" y="140">240</text><text class="w-text-end" x="168" y="140">a<tspan class="w-sub" dy="3">μ</tspan><tspan class="w-sup" dy="-9">win</tspan><tspan dy="6"> (10</tspan><tspan class="w-sup" dy="-6">−10</tspan><tspan dy="6">)</tspan></text></g>
+              </svg>
+              <figcaption>Intermediate-window result and data-driven evaluations. Bars show ±1σ. <details class="fig-notes"><summary>About this figure</summary><p>Including the isospin-breaking correction, the paper obtains a<sub>μ</sub><sup>win</sup> = (237.30 ± 1.46) × 10<sup>−10</sup>, with all uncertainties combined (0.6% precision). In 2022 it lay 3.9σ above the data-driven evaluation (229.4 ± 1.4) × 10<sup>−10</sup> of Colangelo et al., based on the e<sup>+</sup>e<sup>−</sup> → hadrons data then available, and agreed well with the BMW lattice result. CMD-3’s later e<sup>+</sup>e<sup>−</sup> → π<sup>+</sup>π<sup>−</sup> measurement lies above earlier data. Using it for the two-pion channel, with other channels from combined data, Davier et al. (2024) obtain (234.2 ± 1.2 ± 1.0) × 10<sup>−10</sup>; the uncertainties are from the two-pion and the other channels, and the bar shows them combined in quadrature. Bars show ±1σ.</p></details></figcaption>
+            </figure>
+            </details>
+          </div>
+        </article>
+        <article class="pillar" id="pillar-flavour" aria-labelledby="pillar-flavour-title">
+          <svg class="pillar-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M3 16 H12 M29 16 H20" class="ic-line"/><path d="M9 13 L12 16 L9 19 M23 13 L20 16 L23 19" class="ic-line"/><path d="M16 9 V12 M16 20 V23 M11 11 L13 13 M21 11 L19 13 M11 21 L13 19 M21 21 L19 19" class="ic-accent"/></svg>
+          <div class="pillar-body">
+            <h3 id="pillar-flavour-title"><span class="pillar-number">3</span> Heavy-quark decays and matter–antimatter asymmetry</h3>
+            <p class="pillar-question"><strong>The big question:</strong> Why did matter survive the Big Bang instead of annihilating with antimatter?</p>
+            <figure class="pillar-visual">
+              <svg class="pv-svg" viewBox="0 0 320 140" role="img" aria-labelledby="pv-b-title pv-b-desc">
+                <title id="pv-b-title">A B-meson decay into a rho resonance</title>
+                <desc id="pv-b-desc">A B-bar-zero meson decays weakly: a W-minus boson becomes a charged lepton and an antineutrino, and a rho-plus is produced, which decays at once into a positive and a neutral pion.</desc>
+                <path class="pv-line" d="M44 66 H120"/><path class="pv-arrow" d="M86 61l8 5-8 5"/>
+                <path class="pv-wave" d="M120 66 C124 58 128 58 132 52 C136 46 140 50 144 42 C148 34 152 38 156 30 C160 22 164 26 168 20"/>
+                <path class="pv-line" d="M168 20 L236 8 M168 20 L236 40"/>
+                <path class="pv-line" d="M120 66 L176 98"/>
+                <circle class="pv-reso" cx="190" cy="104" r="15"/>
+                <path class="pv-line" d="M204 100 L266 82 M204 110 L266 124"/>
+                <circle class="pv-meson" cx="30" cy="66" r="15"/>
+                <circle class="pv-pion" cx="276" cy="80" r="10"/><circle class="pv-pion" cx="276" cy="124" r="10"/>
+                <text class="pv-text pv-mid pv-dark-text" x="30" y="70">B̄⁰</text>
+                <text class="pv-text" x="132" y="34">W⁻</text>
+                <text class="pv-text" x="242" y="12">ℓ⁻</text><text class="pv-text" x="242" y="44">ν̄</text>
+                <text class="pv-text pv-mid pv-accent" x="190" y="108">ρ⁺</text>
+                <text class="pv-text" x="292" y="84">π⁺</text><text class="pv-text" x="292" y="128">π⁰</text>
+              </svg>
+              <figcaption>B̄⁰ → ρ⁺ℓ⁻ν̄ with ρ⁺ → π⁺π⁰. The ρ decays at once, so the lattice computes B → ππℓν̄.</figcaption>
+            </figure>
+            <details class="pillar-more">
+              <summary>Read more: B and D decays and the CKM matrix</summary>
+              <h4>The physics</h4>
+              <p>The CKM matrix sets how quarks change flavour; its phase is the Standard Model’s CP violation, generally believed too small to explain the matter–antimatter asymmetry, so precise tests look for cracks. Exclusive and inclusive determinations of |V<sub>ub</sub>| have long disagreed. In D decays, direct CP violation needs strong phases, which only QCD can supply.</p>
+              <h4>My approach</h4>
+              <p>Finite-volume lattice QCD for decays into two hadrons: B → ππℓν̄ form factors continued to the ρ pole, and the strong phase of D → Kπ.</p>
+              <h4>Key works</h4>
+              <ul class="key-works">
+                <li><a href="https://arxiv.org/abs/2501.00903">B → ρℓν̄ resonance form factors from B → ππℓν̄ in lattice QCD</a><span>L. Leskovec et al., Physical Review Letters 134, 161901 (2025)</span></li>
+                <li><a href="https://arxiv.org/abs/2608.30737">D → (Kπ)<sub>27</sub> at the SU(3)-flavour-symmetric point I: Methodology and strong phase determination</a><span>M. Black et al., arXiv:2608.30737 (2026), preprint</span></li>
+                <li><a href="https://arxiv.org/abs/2403.19543">Lattice outlook on B → ρℓν̄ and B → K*ℓℓ</a><span>L. Leskovec et al., 12th International Workshop on the CKM Unitarity Triangle (2024)</span></li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="pillar" id="pillar-delta" aria-labelledby="pillar-delta-title">
+          <svg class="pillar-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M2 16 C4 11 6 21 8 16 S12 11 14 16 S18 21 20 16" class="ic-line"/><circle cx="25" cy="16" r="5" class="ic-fill"/></svg>
+          <div class="pillar-body">
+            <h3 id="pillar-delta-title"><span class="pillar-number">4</span> Neutrino–nucleus interactions and nucleon excitations</h3>
+            <p class="pillar-question"><strong>The big question:</strong> What happens inside a nucleus when a neutrino strikes it?</p>
+            <figure class="research-figure delta-figure">
+              <div class="process-diagram" role="img" aria-label="Pion plus and proton to delta plus plus resonance to pion plus and proton">
+                <span class="process-stage stage-in">π⁺ + p</span><span class="process-arrow" aria-hidden="true">→</span><span class="process-stage stage-resonance">Δ⁺⁺</span><span class="process-arrow" aria-hidden="true">→</span><span class="process-stage stage-out">π⁺ + p</span>
+              </div>
+              <p class="scattering-hint" aria-hidden="true">Scroll to see the full illustration →</p>
+              <div class="scattering-viewport" role="region" aria-label="Scattering illustration; scroll horizontally if needed" tabindex="0">
+              <svg class="scattering-scene delta-scene" viewBox="0 0 400 104" role="img" aria-label="Illustrative pion proton scattering: the down quark and antidown annihilate into gluonic fields, three up quarks form delta plus plus, and a down antidown pair is created as pion and proton reappear">
+                <g class="scatter-particle scatter-in-left" data-scatter-hadron="pion-plus" data-scatter-color="b"><circle cx="58" cy="52" r="21"/><text x="58" y="52">π⁺</text></g>
+                <g class="scatter-particle scatter-in-right" data-scatter-hadron="proton"><circle cx="342" cy="52" r="21"/><text x="342" y="52">p</text></g>
+                <g class="scatter-resonance" data-scatter-hadron="delta-plus-plus"><circle cx="200" cy="52" r="30"/><text x="200" y="52">Δ⁺⁺</text></g>
+                <g class="scatter-particle scatter-out-left" data-scatter-hadron="pion-plus" data-scatter-color="b"><circle cx="200" cy="52" r="21"/><text x="200" y="52">π⁺</text></g>
+                <g class="scatter-particle scatter-out-right" data-scatter-hadron="proton"><circle cx="200" cy="52" r="21"/><text x="200" y="52">p</text></g>
+                <g class="delta-burst" aria-hidden="true">
+                  <circle cx="200" cy="41" r="20"/>
+                  <path d="M200 14V5 M200 68v9 M173 41h-9 M227 41h9 M181 22l-7-7 M219 22l7-7 M181 60l-7 7 M219 60l7 7"/>
+                  <path d="M186 35 C190 27 194 43 199 35 S208 27 214 35 M186 47 C191 39 195 55 200 47 S209 39 214 47"/>
+                </g>
+                <text class="delta-annihilation" x="200" y="94">d + d̄ → gluonic field</text>
+                <text class="delta-creation" x="200" y="94">gluonic field → d + d̄</text>
+              </svg>
+              </div>
+              <figcaption id="caption-delta">One illustrative quark-level contribution to π⁺p → Δ⁺⁺ → π⁺p. Press Play. <details class="fig-notes"><summary>About this figure</summary><p class="qcd-intro">The quark illustrations below show color-singlet valence structures in a chosen color basis, not literal colors or complete hadron wavefunctions. Each ket is one term in a superposition. Shapes and positions are illustrative; the waves suggest gluonic fields, not specific gluon paths.</p><p>One illustrative contribution: the proton’s d and the pion’s d̄ annihilate into gluonic fields, leaving three u quarks for Δ⁺⁺; a d d̄ pair can be created as π⁺ and p emerge. The colored dots show one compatible basis component, not literal trajectories or the full QCD amplitude; complete color superpositions are below. In the isospin limit, |π⁺p⟩ = |3/2, 3/2⟩: its squared isospin overlap is 1, not a Δ⁺⁺ formation probability. On the lattice this collision is not simulated: the amplitude is extracted from the energy levels of πN states in a finite box (L = 5.1 fm, a = 0.08 fm, physical quark masses) using Lüscher’s formalism.</p></details></figcaption>
+              <button class="motion-control" type="button" aria-describedby="caption-delta" data-duration="10000" hidden>Play animation</button>
+              <details class="qcd-details">
+                <summary>Quark and color illustrations</summary>
+                <p>Filled circles are quarks; outlined circles with bars are antiquarks. Matching hues denote a color and its anticolor. The six baryon terms show the antisymmetric color tensor in fixed flavor slots; spin and spatial structure are omitted.</p>
+                <div data-qcd-hadrons="pion-plus proton delta-plus-plus"><p>π⁺: u d̄; p: uud; Δ⁺⁺: uuu. Enable JavaScript to see the color superpositions.</p></div>
+              </details>
+              <details class="study-questions">
+                <summary>Check your understanding</summary>
+                <ol>
+                  <li>
+                    <p>What is the total electric charge before and after the collision?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>π⁺ and p each have charge +1, so the total is +2. Δ⁺⁺ also has charge +2, and the outgoing π⁺ and p again total +2. Electric charge is conserved.</p></details>
+                  </li>
+                  <li>
+                    <p>In the illustration, how can five incoming quark and antiquark symbols become the three u quarks of Δ⁺⁺?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>The pion’s d̄ and proton’s d annihilate into gluonic fields in this illustrative contribution, leaving three u quarks. A d d̄ pair can be created on the way out. This is not the only contribution to the full process.</p></details>
+                  </li>
+                  <li>
+                    <p>π⁺ has isospin I = 1 and I₃ = +1; p has I = 1/2 and I₃ = +1/2. What is the pair’s total isospin in the isospin-symmetric limit?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>I = 3/2. The total I₃ is +3/2, which cannot occur in an I = 1/2 state. The resulting unit isospin overlap is not a probability that the collision forms a Δ⁺⁺.</p></details>
+                  </li>
+                </ol>
+              </details>
+            </figure>
+            <details class="pillar-more">
+              <summary>Read more: the Δ resonance and nucleon excitations</summary>
+              <h4>The physics</h4>
+              <p>Pions and neutrinos often excite a nucleon into the Δ(1232); neutrinos also do it through the weak axial current. Beyond the Δ, quark models predict more excited baryons than experiments find, the “missing resonance problem” (<a href="https://arxiv.org/abs/1104.5152">Edwards et al., 2011</a>).</p>
+              <h4>My approach</h4>
+              <p>Nucleon–pion scattering at the physical pion mass to locate the Δ pole, and electromagnetic and axial nucleon-to-Δ transition form factors at a pion mass of about 255 MeV.</p>
+              <h4>Key works</h4>
+              <ul class="key-works">
+                <li><a href="https://arxiv.org/abs/2307.12846">Elastic nucleon–pion scattering amplitudes in the Δ channel at physical pion mass from lattice QCD</a><span>C. Alexandrou et al., Physical Review D 109, 034509 (2024)</span></li>
+                <li><a href="https://doi.org/10.22323/1.518.0067">Nucleon to Δ(1232) resonance transition form factors from lattice QCD</a><span>S. Paul et al., PoS LATTICE2025, 067 (2026)</span></li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="pillar" id="pillar-exotic" aria-labelledby="pillar-exotic-title">
+          <svg class="pillar-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="4" class="ic-fill"/><circle cx="21" cy="11" r="4" class="ic-ring"/><circle cx="11" cy="21" r="4" class="ic-ring"/><circle cx="21" cy="21" r="4" class="ic-fill"/></svg>
+          <div class="pillar-body">
+            <h3 id="pillar-exotic-title"><span class="pillar-number">5</span> Exotic multi-quark matter</h3>
+            <p class="pillar-question"><strong>The big question:</strong> Can quarks bind into four- and six-quark states?</p>
+            <figure class="pillar-visual">
+              <svg class="pv-svg" viewBox="0 0 320 116" role="img" aria-labelledby="pv-exotic-title pv-exotic-desc">
+                <title id="pv-exotic-title">Quark content of two exotic states</title>
+                <desc id="pv-exotic-desc">The doubly charmed tetraquark T c c contains two charm quarks, an anti-up and an anti-down quark. The H dibaryon contains two up, two down and two strange quarks.</desc>
+                <circle class="pv-quark" cx="52" cy="40" r="11"/><text class="pv-qlabel" x="52" y="44">c</text><circle class="pv-quark" cx="80" cy="40" r="11"/><text class="pv-qlabel" x="80" y="44">c</text><circle class="pv-antiquark" cx="52" cy="68" r="11"/><text class="pv-qlabel pv-anti" x="52" y="72">ū</text><circle class="pv-antiquark" cx="80" cy="68" r="11"/><text class="pv-qlabel pv-anti" x="80" y="72">d̄</text><circle class="pv-quark" cx="196" cy="40" r="11"/><text class="pv-qlabel" x="196" y="44">u</text><circle class="pv-quark" cx="224" cy="40" r="11"/><text class="pv-qlabel" x="224" y="44">u</text><circle class="pv-quark" cx="252" cy="40" r="11"/><text class="pv-qlabel" x="252" y="44">d</text><circle class="pv-quark" cx="196" cy="68" r="11"/><text class="pv-qlabel" x="196" y="72">d</text><circle class="pv-quark" cx="224" cy="68" r="11"/><text class="pv-qlabel" x="224" y="72">s</text><circle class="pv-quark" cx="252" cy="68" r="11"/><text class="pv-qlabel" x="252" y="72">s</text><text class="pv-text pv-mid" x="66" y="104">T<tspan class="pv-sub" dy="3">cc</tspan></text><text class="pv-text pv-mid" x="224" y="104">H dibaryon</text>
+              </svg>
+              <figcaption>Quark content only: filled circles are quarks, outlined ones antiquarks. How the quarks arrange themselves is what the calculations study.</figcaption>
+            </figure>
+            <details class="pillar-more">
+              <summary>Read more: tetraquarks and dibaryons</summary>
+              <h4>The physics</h4>
+              <p>Tetraquarks contain two quarks and two antiquarks; dibaryons contain six quarks. Whether states such as T<sub>cc</sub> and the H dibaryon are bound, and how, depends on the strong interaction between their parts.</p>
+              <h4>My approach</h4>
+              <p>Scattering analyses that track the T<sub>cc</sub> pole as the quark masses change, using diquark, molecular and two-meson operators; for the H dibaryon, low-energy spectra from large bases of two-baryon operators.</p>
+              <h4>Key works</h4>
+              <ul class="key-works">
+                <li><a href="https://arxiv.org/abs/2603.01259">T<sub>cc</sub> pole trajectory</a><span>P. Mohanta et al., PoS LATTICE2025, 066 (2026)</span></li>
+                <li><a href="https://arxiv.org/abs/2111.11541">H dibaryon away from the SU(3)<sub>f</sub> symmetric point</a><span>M. Padmanath et al., PoS LATTICE2021, 459 (2022)</span></li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="pillar" id="pillar-resonances" aria-labelledby="pillar-resonances-title">
+          <svg class="pillar-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M2 22 C4 17 6 27 8 22 S12 17 14 22 S18 27 20 22" class="ic-accent"/><circle cx="24" cy="11" r="5" class="ic-ring"/></svg>
+          <div class="pillar-body">
+            <h3 id="pillar-resonances-title"><span class="pillar-number">6</span> Electromagnetic structure of short-lived particles</h3>
+            <p class="pillar-question"><strong>The big question:</strong> How do resonances interact with light before they decay?</p>
+            <figure class="research-figure">
+              <div class="process-diagram" role="img" aria-label="Pion plus and pion minus to rho zero resonance to pion plus and pion minus">
+                <span class="process-stage stage-in">π⁺ + π⁻</span><span class="process-arrow" aria-hidden="true">→</span><span class="process-stage stage-resonance">ρ⁰</span><span class="process-arrow" aria-hidden="true">→</span><span class="process-stage stage-out">π⁺ + π⁻</span>
+              </div>
+              <p class="scattering-hint" aria-hidden="true">Scroll to see the full illustration →</p>
+              <div class="scattering-viewport" role="region" aria-label="Scattering illustration; scroll horizontally if needed" tabindex="0">
+              <svg class="scattering-scene" viewBox="0 0 400 104" role="img" aria-label="The two signed isospin components of the pion pair approach the rho zero resonant contribution and emerge again; the rows represent one superposition, not separate collisions">
+                <text class="scatter-weight" x="3" y="25">+1/√2</text>
+                <text class="scatter-weight" x="3" y="79">−1/√2</text>
+                <g class="scatter-particle scatter-in-left scatter-top" data-scatter-hadron="pion-plus"><circle cx="58" cy="25" r="15"/><text x="58" y="25">π⁺</text></g>
+                <g class="scatter-particle scatter-in-right scatter-top" data-scatter-hadron="pion-minus"><circle cx="342" cy="25" r="15"/><text x="342" y="25">π⁻</text></g>
+                <g class="scatter-particle scatter-in-left scatter-bottom" data-scatter-hadron="pion-minus"><circle cx="58" cy="79" r="15"/><text x="58" y="79">π⁻</text></g>
+                <g class="scatter-particle scatter-in-right scatter-bottom" data-scatter-hadron="pion-plus"><circle cx="342" cy="79" r="15"/><text x="342" y="79">π⁺</text></g>
+                <g class="scatter-resonance" data-scatter-hadron="rho-zero"><circle cx="200" cy="52" r="30"/><text x="200" y="52">ρ⁰</text></g>
+                <g class="scatter-particle scatter-out-left scatter-top" data-scatter-hadron="pion-plus"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁺</text></g>
+                <g class="scatter-particle scatter-out-right scatter-top" data-scatter-hadron="pion-minus"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁻</text></g>
+                <g class="scatter-particle scatter-out-left scatter-bottom" data-scatter-hadron="pion-minus"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁻</text></g>
+                <g class="scatter-particle scatter-out-right scatter-bottom" data-scatter-hadron="pion-plus"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁺</text></g>
+              </svg>
+              </div>
+              <figcaption id="caption-rho">The ρ⁰ as a resonance in π⁺π⁻ scattering. Press Play. <details class="fig-notes"><summary>About this figure</summary><p class="qcd-intro">The quark illustrations below show color-singlet valence structures in a chosen color basis, not literal colors or complete hadron wavefunctions. Each ket is one term in a superposition. Shapes and positions are illustrative; the waves suggest gluonic fields, not specific gluon paths.</p><p>With JavaScript, each hadron shows one illustrative valence color term with symbolic gluon fields; ρ⁰ shows its uū component only. Full superpositions are below; no individual quark paths or gluon exchanges are implied. For the I = 1 P-wave, |1, 0⟩ = (|π⁺π⁻⟩ − |π⁻π⁺⟩)/√2 in ordered isospin slots. The rows are terms of one superposition, not separate collisions; the odd spatial wavefunction is not shown. Each squared overlap is 1/2, not a resonance-formation or decay probability. On the lattice the phase shift is extracted from the energy levels of ππ states in a finite box (L ≈ 3.6 fm, m<sub>π</sub> ≈ 320 MeV) using Lüscher’s formalism.</p></details></figcaption>
+              <button class="motion-control" type="button" aria-describedby="caption-rho" hidden>Play animation</button>
+              <details class="qcd-details">
+                <summary>Quark and color illustrations</summary>
+                <p>Filled circles are quarks; outlined circles with bars are antiquarks. Matching hues denote a color and its anticolor. The neutral-meson flavor combination is shown in the isospin limit; spin and spatial structure are omitted.</p>
+                <div data-qcd-hadrons="pion-plus pion-minus rho-zero"><p>π⁺: u d̄; π⁻: d ū; ρ⁰: (u ū − d d̄)/√2. Enable JavaScript to see the color superpositions.</p></div>
+              </details>
+              <details class="study-questions">
+                <summary>Check your understanding</summary>
+                <ol>
+                  <li>
+                    <p>What is the total electric charge of π⁺π⁻? Can it match the charge of ρ⁰?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>The charges +1 and −1 add to zero, matching the neutral ρ⁰. Charge conservation permits this channel, though it does not by itself determine the scattering amplitude.</p></details>
+                  </li>
+                  <li>
+                    <p>What does “P-wave” say about the pions’ relative orbital angular momentum L?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>A P-wave has L = 1. Its spatial wavefunction changes sign when the relative position or momentum is reversed.</p></details>
+                  </li>
+                  <li>
+                    <p>The shown I = 1 isospin combination changes sign when the two pion slots are exchanged. How is that consistent with bosonic exchange symmetry?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>In the isospin limit, exchanging both the isospin slots and spatial coordinates gives two minus signs: one from the displayed isospin factor and one from the P-wave. Their product is symmetric, as required for the two-pion state.</p></details>
+                  </li>
+                </ol>
+              </details>
+            </figure>
+            <details class="pillar-more">
+              <summary>Read more: resonances and their photon couplings</summary>
+              <h4>The physics</h4>
+              <p>Most hadrons live only a few trillionths of a trillionth of a second and appear only as structures in scattering. Their couplings to photons, such as the ρ’s radiative decay width, are measured quantities.</p>
+              <h4>My approach</h4>
+              <p>Scattering phase shifts from finite-volume energies, and radiative amplitudes such as πγ → ππ continued to the resonance pole.</p>
+              <h4>Key works</h4>
+              <ul class="key-works">
+                <li><a href="https://arxiv.org/abs/1807.08357">πγ → ππ transition and the ρ radiative decay width from lattice QCD</a><span>C. Alexandrou et al., Physical Review D 98, 074502 (2018)</span></li>
+                <li><a href="https://arxiv.org/abs/1704.05439">P-wave ππ scattering and the ρ resonance from lattice QCD</a><span>C. Alexandrou et al., Physical Review D 96, 034525 (2017)</span></li>
+                <li><a href="https://arxiv.org/abs/2006.14035">I = 1/2 S-wave and P-wave Kπ scattering and the κ and K* resonances from lattice QCD</a><span>G. Rendon et al., Physical Review D 102, 114520 (2020)</span></li>
+              </ul>
+              <figure class="research-figure">
+              <div class="process-diagram" role="img" aria-label="Pion plus and virtual photon to rho plus resonance to pion plus and pion zero">
+                <span class="process-stage stage-in">π⁺ + γ*</span><span class="process-arrow" aria-hidden="true">→</span><span class="process-stage stage-resonance">ρ⁺</span><span class="process-arrow" aria-hidden="true">→</span><span class="process-stage stage-out">π⁺ + π⁰</span>
+              </div>
+              <p class="scattering-hint" aria-hidden="true">Scroll to see the full illustration →</p>
+              <div class="scattering-viewport" role="region" aria-label="Scattering illustration; scroll horizontally if needed" tabindex="0">
+              <svg class="scattering-scene" viewBox="0 0 400 104" role="img" aria-label="A pion and virtual photon approach the rho plus resonant contribution; the two signed rows emerging represent one final isospin superposition, not separate decays">
+                <g class="scatter-particle scatter-in-left" data-scatter-hadron="pion-plus"><circle cx="58" cy="52" r="21"/><text x="58" y="52">π⁺</text></g>
+                <g class="scatter-photon scatter-in-right">
+                  <path d="M310 52 C312 44 316 44 318 52 C320 60 324 60 326 52 C328 44 332 44 334 52 C336 60 340 60 342 52 C344 44 348 44 350 52 C352 60 356 60 358 52 C360 44 364 44 366 52 C368 60 372 60 374 52"/>
+                  <text x="342" y="34">γ*</text>
+                </g>
+                <g class="scatter-resonance" data-scatter-hadron="rho-plus"><circle cx="200" cy="52" r="30"/><text x="200" y="52">ρ⁺</text></g>
+                <g class="scatter-out-weights"><text class="scatter-weight" x="3" y="25">+1/√2</text><text class="scatter-weight" x="3" y="79">−1/√2</text></g>
+                <g class="scatter-particle scatter-out-left scatter-top" data-scatter-hadron="pion-plus"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁺</text></g>
+                <g class="scatter-particle scatter-out-right scatter-top" data-scatter-hadron="pion-zero"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁰</text></g>
+                <g class="scatter-particle scatter-out-left scatter-bottom" data-scatter-hadron="pion-zero"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁰</text></g>
+                <g class="scatter-particle scatter-out-right scatter-bottom" data-scatter-hadron="pion-plus"><circle cx="200" cy="52" r="15"/><text x="200" y="52">π⁺</text></g>
+              </svg>
+              </div>
+              <figcaption id="caption-transition">A pion and a virtual photon produce two pions through the ρ⁺. Press Play. <details class="fig-notes"><summary>About this figure</summary><p>The wavy γ* line represents a virtual photon, not a literal free electromagnetic wave. With JavaScript, each hadron shows one illustrative valence color term with symbolic gluon fields; π⁰ shows its uū component only. Full superpositions are below; no individual quark paths or gluon exchanges are implied. The I = 1 final state has |1, 1⟩ = (|π⁺π⁰⟩ − |π⁰π⁺⟩)/√2 in ordered isospin slots. The rows represent one superposition, not separate decays; the odd spatial wavefunction is not shown. Each squared overlap is 1/2, not a transition probability. The electromagnetic current has isoscalar and isovector parts. On the lattice, matrix elements computed in a finite box (32³ × 96 points, L ≈ 3.6 fm, m<sub>π</sub> ≈ 320 MeV) are converted to the infinite-volume amplitude with the Lellouch–Lüscher factor.</p></details></figcaption>
+              <button class="motion-control" type="button" aria-describedby="caption-transition" hidden>Play animation</button>
+              <details class="qcd-details">
+                <summary>Quark and color illustrations</summary>
+                <p>Filled circles are quarks; outlined circles with bars are antiquarks. Matching hues denote a color and its anticolor. The neutral-meson flavor combination is shown in the isospin limit; spin and spatial structure are omitted. The photon has no quark content.</p>
+                <div data-qcd-hadrons="pion-plus rho-plus pion-zero"><p>π⁺ and ρ⁺: u d̄; π⁰: (u ū − d d̄)/√2. Enable JavaScript to see the color superpositions.</p></div>
+              </details>
+              <details class="study-questions">
+                <summary>Check your understanding</summary>
+                <ol>
+                  <li>
+                    <p>What does the star in γ* mean?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>It denotes a virtual photon: unlike a free real photon, its four-momentum can have q² ≠ 0. The wave in the diagram is a symbol, not a literal picture of the electromagnetic field.</p></details>
+                  </li>
+                  <li>
+                    <p>In the isospin limit, each pion has G-parity −1. What is the G-parity of a two-pion state?</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>+1: the two pion factors multiply to (−1)(−1). G-parity combines charge conjugation with a rotation in isospin space; it is a useful symmetry of isospin-symmetric QCD.</p></details>
+                  </li>
+                  <li>
+                    <p>The pion has G = −1 and the two-pion state has G = +1. Which electromagnetic-current component can connect them in the isospin limit? Hint: the isoscalar component is G-odd, the isovector component G-even.</p>
+                    <details class="study-answer"><summary>Show answer</summary><p>The G-odd isoscalar component can connect them: (−1) × (−1) = +1. The G-even isovector component’s matrix element vanishes in this limit. This is a selection rule for the hadronic current, not a claim that the photon itself has a definite G-parity or that the full electromagnetic interaction conserves G-parity.</p></details>
+                  </li>
+                </ol>
+              </details>
+            </figure>
+            </details>
+          </div>
+        </article>
+        <article class="pillar" id="pillar-ml" aria-labelledby="pillar-ml-title">
+          <svg class="pillar-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M6 8 L16 16 L26 10 M6 8 L16 24 L26 10 M6 24 L16 16 L26 22 M6 24 L16 24 L26 22 M6 8 L16 16 M6 24 L16 16" class="ic-line"/><circle cx="6" cy="8" r="2.5" class="ic-fill"/><circle cx="6" cy="24" r="2.5" class="ic-fill"/><circle cx="16" cy="16" r="2.5" class="ic-fill"/><circle cx="16" cy="24" r="2.5" class="ic-fill"/><circle cx="26" cy="10" r="2.5" class="ic-fill"/><circle cx="26" cy="22" r="2.5" class="ic-fill"/></svg>
+          <div class="pillar-body">
+            <h3 id="pillar-ml-title"><span class="pillar-number">7</span> Machine learning for quantum physics</h3>
+            <p class="pillar-question"><strong>The big question:</strong> Can machine learning solve quantum systems more efficiently than traditional methods?</p>
+            <figure class="pillar-visual">
+              <svg class="pv-svg" viewBox="0 0 320 120" role="img" aria-labelledby="pv-ml-title pv-ml-desc">
+                <title id="pv-ml-title">An autoencoder for spin configurations</title>
+                <desc id="pv-ml-desc">A five by five grid of up and down spins enters an encoder that narrows to a single latent variable z; a decoder widens back to a grid of the same size.</desc>
+                <rect class="pv-spin-up" x="14" y="32" width="10" height="10"/><rect class="pv-spin-dn" x="25" y="32" width="10" height="10"/><rect class="pv-spin-up" x="36" y="32" width="10" height="10"/><rect class="pv-spin-up" x="47" y="32" width="10" height="10"/><rect class="pv-spin-dn" x="58" y="32" width="10" height="10"/><rect class="pv-spin-dn" x="14" y="43" width="10" height="10"/><rect class="pv-spin-up" x="25" y="43" width="10" height="10"/><rect class="pv-spin-up" x="36" y="43" width="10" height="10"/><rect class="pv-spin-dn" x="47" y="43" width="10" height="10"/><rect class="pv-spin-up" x="58" y="43" width="10" height="10"/><rect class="pv-spin-up" x="14" y="54" width="10" height="10"/><rect class="pv-spin-up" x="25" y="54" width="10" height="10"/><rect class="pv-spin-dn" x="36" y="54" width="10" height="10"/><rect class="pv-spin-up" x="47" y="54" width="10" height="10"/><rect class="pv-spin-dn" x="58" y="54" width="10" height="10"/><rect class="pv-spin-dn" x="14" y="65" width="10" height="10"/><rect class="pv-spin-up" x="25" y="65" width="10" height="10"/><rect class="pv-spin-dn" x="36" y="65" width="10" height="10"/><rect class="pv-spin-dn" x="47" y="65" width="10" height="10"/><rect class="pv-spin-up" x="58" y="65" width="10" height="10"/><rect class="pv-spin-up" x="14" y="76" width="10" height="10"/><rect class="pv-spin-dn" x="25" y="76" width="10" height="10"/><rect class="pv-spin-up" x="36" y="76" width="10" height="10"/><rect class="pv-spin-up" x="47" y="76" width="10" height="10"/><rect class="pv-spin-up" x="58" y="76" width="10" height="10"/>
+                <path class="pv-funnel" d="M84 30 L148 52 L148 70 L84 92 Z"/>
+                <circle class="pv-latent" cx="164" cy="61" r="10"/>
+                <path class="pv-funnel" d="M180 52 L244 30 L244 92 L180 70 Z"/>
+                <rect class="pv-spin-up" x="256" y="32" width="10" height="10"/><rect class="pv-spin-dn" x="267" y="32" width="10" height="10"/><rect class="pv-spin-up" x="278" y="32" width="10" height="10"/><rect class="pv-spin-up" x="289" y="32" width="10" height="10"/><rect class="pv-spin-dn" x="300" y="32" width="10" height="10"/><rect class="pv-spin-dn" x="256" y="43" width="10" height="10"/><rect class="pv-spin-up" x="267" y="43" width="10" height="10"/><rect class="pv-spin-up" x="278" y="43" width="10" height="10"/><rect class="pv-spin-dn" x="289" y="43" width="10" height="10"/><rect class="pv-spin-up" x="300" y="43" width="10" height="10"/><rect class="pv-spin-up" x="256" y="54" width="10" height="10"/><rect class="pv-spin-up" x="267" y="54" width="10" height="10"/><rect class="pv-spin-dn" x="278" y="54" width="10" height="10"/><rect class="pv-spin-up" x="289" y="54" width="10" height="10"/><rect class="pv-spin-dn" x="300" y="54" width="10" height="10"/><rect class="pv-spin-dn" x="256" y="65" width="10" height="10"/><rect class="pv-spin-up" x="267" y="65" width="10" height="10"/><rect class="pv-spin-dn" x="278" y="65" width="10" height="10"/><rect class="pv-spin-dn" x="289" y="65" width="10" height="10"/><rect class="pv-spin-up" x="300" y="65" width="10" height="10"/><rect class="pv-spin-up" x="256" y="76" width="10" height="10"/><rect class="pv-spin-dn" x="267" y="76" width="10" height="10"/><rect class="pv-spin-up" x="278" y="76" width="10" height="10"/><rect class="pv-spin-up" x="289" y="76" width="10" height="10"/><rect class="pv-spin-up" x="300" y="76" width="10" height="10"/>
+                <text class="pv-text pv-mid pv-dark-text" x="164" y="65">z</text>
+                <text class="pv-text pv-mid" x="41" y="22">spins</text>
+                <text class="pv-text pv-mid" x="116" y="112">encoder</text>
+                <text class="pv-text pv-mid" x="212" y="112">decoder</text>
+                <text class="pv-text pv-mid" x="283" y="22">output</text>
+              </svg>
+              <figcaption>An autoencoder compresses each Ising spin configuration to one number z; how z behaves reveals the critical temperature.</figcaption>
+            </figure>
+            <details class="pillar-more">
+              <summary>Read more: neural networks for physics</summary>
+              <h4>The physics</h4>
+              <p>Simulations of quantum and statistical systems hit computational bottlenecks, from locating phase transitions to representing many-fermion wavefunctions.</p>
+              <h4>My approach</h4>
+              <p>Autoencoders that find the 2D Ising critical temperature without supervision, and Kolmogorov–Arnold networks as quantum Monte Carlo wavefunctions, roughly ten times cheaper than other neural-network ansätze in one-dimensional tests.</p>
+              <h4>Key works</h4>
+              <ul class="key-works">
+                <li><a href="https://arxiv.org/abs/2506.02171">Kolmogorov–Arnold wavefunctions</a><span>P. F. Bedaque et al., Physical Review C 112, 054002 (2025)</span></li>
+                <li><a href="https://arxiv.org/abs/2512.07800">Trapped fermions through Kolmogorov–Arnold wavefunctions</a><span>P. F. Bedaque et al., arXiv:2512.07800 (2025), preprint</span></li>
+                <li><a href="https://arxiv.org/abs/1903.03506">The critical temperature of the 2D-Ising model through deep learning autoencoders</a><span>C. Alexandrou et al., European Physical Journal B 93, 226 (2020)</span></li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <p><a href="/assets/CV.pdf">More research experience in my CV</a></p>
+      </div>
+    </section>
+
+    <section class="content-section" id="about">
+      <h2>About</h2>
+      <div>
+          <p>I grew up in Narwapahar, studied at NISER, and earned a joint PhD from The Cyprus Institute and the University of Wuppertal. I later worked in Mainz, Edinburgh, and Maryland.</p>
+          <p>When I’m not doing physics: tabla, photography, and strategy games.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Writing</h2>
+      <div>
+        <p><a href="/hadronicle/">Hadronicle: Chronicles of hadrons</a><br>Notes on hadrons, lattice QCD, and related ideas.</p>
+        <p><a href="/mogojastro/" lang="bn">মগজাস্ত্র</a><br>Bengali writing about science.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div>Srijit Paul <span>·</span> <a href="mailto:srijitpaul@gmail.com">Get in touch</a> <span>·</span> <a href="/energy/">Energy of your visit</a></div></footer>
+</body>
+</html>

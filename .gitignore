@@ -1,0 +1,49 @@
+# Allowlist: only the static site listed below is committed and published.
+# Everything else in this folder (the 2018 Hydejack files, node_modules, build
+# output, private documents) is ignored. To publish a new file or folder, add a
+# matching "!" rule here, then check `git status --ignored` before committing.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/404.html
+!/robots.txt
+!/sitemap.xml
+!/energy/
+!/hadronicle/
+!/mogojastro/
+!/tests/
+
+!/docs/
+/docs/*
+!/docs/hadronicle.md
+
+!/assets/
+/assets/*
+!/assets/CV.pdf
+!/assets/fonts/
+!/assets/vendor/
+!/assets/css/
+/assets/css/*
+!/assets/css/scholar.css
+!/assets/js/
+/assets/js/*
+!/assets/js/qcd-hadrons.js
+!/assets/js/research-animations.js
+!/assets/js/scholar-math.js
+!/assets/js/visit-energy.js
+!/assets/img/
+/assets/img/*
+!/assets/img/srijit-portrait.webp
+!/assets/icons/
+/assets/icons/*
+!/assets/icons/favicon.ico
+
+# Never commit these, even inside allowed folders
+.DS_Store
+._*
+*.tex
+*.bak
+*.log
+*.swp
+.env*
